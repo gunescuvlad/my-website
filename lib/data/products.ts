@@ -60,6 +60,40 @@ export const categories: Category[] = [
     ],
   },
 
+  // Adaugă acest obiect în array-ul `categories`, înainte de export:
+{
+  id: "polistiren",
+  name: "POLISTIREN",
+  slug: "polistiren",
+  productCount:  15,
+  subcategories: [
+    {
+      id: "polistiren-expandat",
+      name: "Polistiren Expandat",
+      slug: "polistiren-expandat",
+      productCount: 8,
+    },
+    {
+      id: "polistiren-extrudat",
+      name: "Polistiren Extrudat",
+      slug: "polistiren-extrudat",
+      productCount: 4,
+    },
+    {
+      id: "polistiren-grafitat",
+      name: "Polistiren Grafitat",
+      slug: "polistiren-grafitat",
+      productCount: 1,
+    },
+    {
+      id: "polistiren-special",
+      name: "Polistiren Special",
+      slug: "polistiren-special",
+      productCount: 2,
+    },
+  ],
+},
+
 
   {
     id: "zidarie",
@@ -4929,6 +4963,293 @@ const sigilariLipiriProducts: Product[] = [
   },
 ]
 
+const polistirenExpandatProducts: Product[] = [
+  {
+    id: "eps50-20cm",
+    name: "Polistiren expandat Sikatherm® EPS50 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS50, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS50",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps50-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+  {
+    id: "eps60-20cm",
+    name: "Polistiren expandat Sikatherm® EPS60 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS60, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS60",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps60-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+
+  {
+    id: "eps70-20cm",
+    name: "Polistiren expandat Sikatherm® EPS70 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS70, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS70",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps60-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+ 
+  {
+    id: "eps80-20cm",
+    name: "Polistiren expandat Sikatherm® EPS80 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS80, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS80",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps60-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+
+  {
+    id: "eps100-20cm",
+    name: "Polistiren expandat Sikatherm® EPS100 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS100, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS100",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps60-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+
+  {
+    id: "eps120-20cm",
+    name: "Polistiren expandat Sikatherm® EPS120 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS120, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS120",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps60-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+
+  {
+    id: "eps150-20cm",
+    name: "Polistiren expandat Sikatherm® EPS150 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS150, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS150",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps60-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+
+  {
+    id: "eps200-20cm",
+    name: "Polistiren expandat Sikatherm® EPS200 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-expandat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren expandat EPS200, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS200",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps60-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+]
+
+const polistirenExtrudatProducts: Product[] = [
+  {
+    id: "xps-50mm",
+    name: "Polistiren Extrudat 50mm XPS",
+    category: "polistiren",
+    subcategory: "polistiren-extrudat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren extrudat XPS, grosime 50mm.",
+    specifications: {
+      Grosime: "50mm",
+      Tip: "XPS",
+    },
+    images: ["/images/polistiren/xps-50mm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+  
+  {
+    id: "xps-20mm",
+    name: "Polistiren Extrudat 20mm XPS",
+    category: "polistiren",
+    subcategory: "polistiren-extrudat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren extrudat XPS, grosime 20mm.",
+    specifications: {
+      Grosime: "20mm",
+      Tip: "XPS",
+    },
+    images: ["/images/polistiren/xps-50mm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+
+  {
+    id: "xps-100mm",
+    name: "Polistiren Extrudat 100mm XPS",
+    category: "polistiren",
+    subcategory: "polistiren-extrudat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren extrudat XPS, grosime 100mm.",
+    specifications: {
+      Grosime: "100mm",
+      Tip: "XPS",
+    },
+    images: ["/images/polistiren/xps-50mm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+
+  {
+    id: "xps-30mm",
+    name: "Polistiren Extrudat 30mm XPS",
+    category: "polistiren",
+    subcategory: "polistiren-extrudat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren extrudat XPS, grosime 30mm.",
+    specifications: {
+      Grosime: "30mm",
+      Tip: "XPS",
+    },
+    images: ["/images/polistiren/xps-50mm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+]
+
+const polistirenGrafitatProducts: Product[] = [
+  {
+    id: "eps80-grafitat-20cm",
+    name: "Polistiren Grafitat Sikatherm® EPS80 20 cm",
+    category: "polistiren",
+    subcategory: "polistiren-grafitat",
+    price: "request",
+    unit: "buc",
+    description: "Plăci de polistiren grafitat EPS80, grosime 20cm.",
+    specifications: {
+      Grosime: "20cm",
+      Densitate: "EPS80 Grafitat",
+      Brand: "Sikatherm®",
+    },
+    images: ["/images/polistiren/eps80-grafitat-20cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+]
+
+const polistirenSpecialProducts: Product[] = [
+  {
+    id: "pir-bv-bv-1200x2400-3cm",
+    name: "Placă PIR Thermotop cu barieră de vapori BV-BV 1200×2400 mm, 3 cm",
+    category: "polistiren",
+    subcategory: "polistiren-special",
+    price: "request",
+    unit: "buc",
+    description: "Placă PIR cu barieră de vapori, 3cm grosime, dimensiuni 1200×2400mm.",
+    specifications: {
+      Dimensiuni: "1200×2400mm",
+      Grosime: "3cm",
+      Tip: "PIR + barieră vapori",
+    },
+    images: ["/images/polistiren/pir-bv-bv-3cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+  {
+    id: "pir-al-al-1200x2400-3cm",
+    name: "Placă PIR Thermotop cu folie de aluminiu AL-AL 1200×2400 mm, 3 cm",
+    category: "polistiren",
+    subcategory: "polistiren-special",
+    price: "request",
+    unit: "buc",
+    description: "Placă PIR cu folie aluminiu, 3cm grosime, dimensiuni 1200×2400mm.",
+    specifications: {
+      Dimensiuni: "1200×2400mm",
+      Grosime: "3cm",
+      Tip: "PIR + folie aluminiu",
+    },
+    images: ["/images/polistiren/pir-al-al-3cm.webp"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+]
+
 // Combinăm toate produsele
 export const products: Product[] = [
   ...fierBetonProducts,
@@ -4957,6 +5278,10 @@ export const products: Product[] = [
   ...gamaFestaProducts,
   ...amorseMasticuriProducts,
   ...membranaCramponataProducts,
+   ...polistirenExpandatProducts,
+  ...polistirenExtrudatProducts,
+  ...polistirenGrafitatProducts,
+  ...polistirenSpecialProducts,
 ]
 
 // Funcții helper
