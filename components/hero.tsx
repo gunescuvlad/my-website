@@ -29,7 +29,8 @@ export function Hero() {
           Peste 20 de ani de experiență în furnizarea materialelor de construcții. Livrare rapidă în București și Ilfov.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/categorie/metale">
+          {/* modified here: point to the overview */}
+          <Link href="/categorie">
             <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
               Explorează Catalogul
               <ArrowRight className="ml-2 h-5 w-5" />
