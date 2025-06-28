@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { getProductById, allProducts } from "@/lib/data/products"
+import { getProductById, products } from "@/lib/data/products";
 import { ProductPage } from "@/components/product-page"
 
 interface ProductPageProps {
@@ -9,10 +9,11 @@ interface ProductPageProps {
 }
 
 export async function generateStaticParams() {
-  return allProducts.map((product) => ({
+  return products.map((product) => ({
     id: product.id,
-  }))
+  }));
 }
+
 
 export default function Product({ params }: ProductPageProps) {
   const product = getProductById(params.id)

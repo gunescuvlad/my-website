@@ -9,7 +9,8 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useCart } from "@/lib/context/cart-context"
-import { type Product, allProducts, categories } from "@/lib/data/products"
+import { type Product, products, categories } from "@/lib/data/products";
+
 
 interface ProductPageProps {
   product: Product
@@ -23,9 +24,10 @@ export function ProductPage({ product }: ProductPageProps) {
   const category = categories.find((cat) => cat.id === product.category)
   const subcategory = category?.subcategories.find((sub) => sub.id === product.subcategory)
 
-  const similarProducts = allProducts
-    .filter((p) => p.subcategory === product.subcategory && p.id !== product.id)
-    .slice(0, 4)
+  const similarProducts = products
+  .filter((p) => p.subcategory === product.subcategory && p.id !== product.id)
+  .slice(0, 4);
+
 
   const addToCart = () => {
     dispatch({
