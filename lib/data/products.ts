@@ -1,3 +1,4 @@
+
 export interface Product {
   id: string
   name: string
@@ -62,13 +63,7 @@ export const categories: Category[] = [
       { id: "mortare", name: "Mortare", slug: "mortare", productCount: 28 },
     ],
   },
-  {
-    id: "izolarii",
-    name: "IZOLAȚII",
-    slug: "izolarii",
-    productCount: 8,
-    subcategories: [{ id: "hidroizolarii", name: "Hidroizolații", slug: "hidroizolarii", productCount: 8 }],
-  },
+ 
   {
     id: "adezivi",
     name: "ADEZIVI",
@@ -2188,154 +2183,9 @@ const mortareProducts: Product[] = [
   },
 ]
 
-// IZOLAȚII - Hidroizolații (toate produsele)
-const hidroizolatiiProducts: Product[] = [
-  {
-    id: "membrana-bituminoasa-app-4mm",
-    name: "Membrana bituminoasa APP 4mm",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 28.5,
-    unit: "mp",
-    description: "Membrană bituminoasă APP modificată, grosime 4mm.",
-    specifications: {
-      Grosime: "4mm",
-      Tip: "APP modificată",
-      Armatura: "Poliester",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.6,
-    reviews: 78,
-    badge: "bestseller",
-  },
-  {
-    id: "membrana-bituminoasa-sbs-5mm",
-    name: "Membrana bituminoasa SBS 5mm",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 35.8,
-    unit: "mp",
-    description: "Membrană bituminoasă SBS modificată, grosime 5mm.",
-    specifications: {
-      Grosime: "5mm",
-      Tip: "SBS modificată",
-      Armatura: "Poliester",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.7,
-    reviews: 92,
-  },
-  {
-    id: "folie-polietilena-0-2mm",
-    name: "Folie polietilena 0.2mm",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 2.8,
-    unit: "mp",
-    description: "Folie de polietilenă pentru barieră de vapori, grosime 0.2mm.",
-    specifications: {
-      Grosime: "0.2mm",
-      Material: "Polietilenă",
-      Utilizare: "Barieră vapori",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.3,
-    reviews: 45,
-  },
-  {
-    id: "banda-bituminoasa-autoadeziva",
-    name: "Banda bituminoasa autoadeziva",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 15.6,
-    unit: "ml",
-    description: "Bandă bituminoasă autoadezivă pentru etanșări.",
-    specifications: {
-      Latime: "10cm",
-      Tip: "Autoadezivă",
-      Material: "Bitum modificat",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.5,
-    reviews: 67,
-  },
-  {
-    id: "primer-bituminos-10l",
-    name: "Primer bituminos 10L",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 45.9,
-    unit: "buc",
-    description: "Primer bituminos pentru pregătirea suportului.",
-    specifications: {
-      Volum: "10L",
-      Tip: "Bituminos",
-      Utilizare: "Pregătire suport",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.4,
-    reviews: 38,
-  },
-  {
-    id: "emulsie-bituminoasa-20l",
-    name: "Emulsie bituminoasa 20L",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 78.5,
-    unit: "buc",
-    description: "Emulsie bituminoasă pentru hidroizolații la rece.",
-    specifications: {
-      Volum: "20L",
-      Tip: "Emulsie",
-      Aplicare: "La rece",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.6,
-    reviews: 54,
-  },
-  {
-    id: "masa-bituminoasa-25kg",
-    name: "Masa bituminoasa 25kg",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 89.2,
-    unit: "sac",
-    description: "Masă bituminoasă pentru hidroizolații la cald.",
-    specifications: {
-      Greutate: "25kg",
-      Tip: "Masă bituminoasă",
-      Aplicare: "La cald",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.7,
-    reviews: 63,
-  },
-  {
-    id: "membrana-pvc-1-5mm",
-    name: "Membrana PVC 1.5mm",
-    category: "izolarii",
-    subcategory: "hidroizolarii",
-    price: 42.8,
-    unit: "mp",
-    description: "Membrană PVC pentru hidroizolații, grosime 1.5mm.",
-    specifications: {
-      Grosime: "1.5mm",
-      Material: "PVC",
-      Utilizare: "Hidroizolații",
-    },
-    images: ["/placeholder.svg?height=400&width=400"],
-    inStock: true,
-    rating: 4.8,
-    reviews: 71,
-  },
-]
+
+
+
 
 // ADEZIVI - Adezivi gips carton
 const adeziviGipsCartonProducts: Product[] = [
@@ -4991,7 +4841,6 @@ export const products: Product[] = [
   ...cimentProducts,
   ...gleturiProducts,
   ...mortareProducts,
-  ...hidroizolatiiProducts,
   ...adeziviGipsCartonProducts,
   ...adeziviGresieFaiantaProducts,
   ...adeziviPolistirenProducts,
@@ -5058,4 +4907,3 @@ export function getSubcategoryById(categoryId: string, subcategoryId: string): S
   return category?.subcategories.find((sub) => sub.id === subcategoryId)
 }
 export { products as allProducts }
-
