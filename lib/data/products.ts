@@ -41,6 +41,26 @@ export const categories: Category[] = [
       { id: "fier-beton-fasonat", name: "Fier beton fasonat", slug: "fier-beton-fasonat", productCount: 5 },
     ],
   },
+
+  // —————————————
+  // Materiale Hidroizolatii
+  {
+    id: "hidroizolatii",
+    name: "Materiale Hidroizolații",
+    slug: "hidroizolatii",
+    productCount:  24,
+      
+    subcategories: [
+      { id: "decobit",       name: "DECOBIT – Carton Bituminat", slug: "decobit",       productCount: 2 },
+      { id: "gama-profesional", name: "Gama Profesional",        slug: "gama-profesional", productCount: 4 },
+      { id: "gama-standard",   name: "Gama Standard",          slug: "gama-standard",   productCount: 1 },
+      { id: "gama-festa",      name: "Gama Festa",             slug: "gama-festa",      productCount: 11 },
+      { id: "amorse-masticuri", name: "Amorse și masticuri",    slug: "amorse-masticuri", productCount: 3 },
+      { id: "membrana-cramponata", name: "Membrană Cramponată", slug: "membrana-cramponata", productCount: 3 },
+    ],
+  },
+
+
   {
     id: "zidarie",
     name: "ZIDĂRIE",
@@ -744,6 +764,84 @@ const bcaProducts: Product[] = [
     reviews: 21,
   },
 ]
+
+// ————————— DECOBIT —————————
+const decobitProducts: Product[] = [
+  {
+    id: "carton-bituminos-10m",
+    name: "Carton bituminos 10 m",
+    category: "hidroizolatii",
+    subcategory: "decobit",
+    price:  "request",    // or a number
+    unit: "rola",
+    description: "Carton bituminos de 10 metri pentru hidroizolații.",
+    specifications: {},
+    images: ["/placeholder.svg"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+  {
+    id: "carton-bituminos-20m",
+    name: "Carton bituminos 20 m",
+    category: "hidroizolatii",
+    subcategory: "decobit",
+    price:  "request",
+    unit: "rola",
+    description: "Carton bituminos de 20 metri pentru hidroizolații.",
+    specifications: {},
+    images: ["/placeholder.svg"],
+    inStock: true,
+    rating: 0,
+    reviews: 0,
+  },
+]
+
+// ————————— Gama Profesional —————————
+const gamaProfesionalProducts: Product[] = [
+  { id: "arco-forato-v-0-85",          name: "ARCO Forato V 0.85",         category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "arco-thermo-ad-v-2mm",       name: "Arco Thermo AD V 2mm",       category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "arco-antiroot-plasto-p-3mm", name: "ARCO Antiroot Plasto P 3mm", category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "arcotherm-dx2",             name: "Arcotherm DX2",             category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+]
+
+// ————————— Gama Standard —————————
+const gamaStandardProducts: Product[] = [
+  { id: "novatec-pa-4-5", name: "Novatec PA 4.5", category: "hidroizolatii", subcategory: "gama-standard", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+]
+
+// ————————— Gama Festa —————————
+const gamaFestaProducts: Product[] = [
+  "2","V3","P3","V4","VA4","PA3.5","VA3.5","P4","PA4","VA4.5","PA4.5"
+].map((code) => ({
+  id: `festa-plus-${code.replace(/\./g,"-")}`,
+  name: `Festa Plus ${code}`,
+  category: "hidroizolatii",
+  subcategory: "gama-festa",
+  price: "request",
+  unit: "mp",
+  description: "",
+  specifications: {},
+  images: ["/placeholder.svg"],
+  inStock: true,
+  rating: 0,
+  reviews: 0,
+}));
+
+// ————————— Amorse și Masticuri —————————
+const amorseMasticuriProducts: Product[] = [
+  { id: "elastobit-20kg",       name: "Elastobit (20kg)",       category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "superbit-25kg",        name: "Superbit (25kg)",        category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "izobituprimer-20l",    name: "Amorsa Bituminoasă IzoBituprimer 20L (Solvent)", category: "hidroizolatii", subcategory: "amorse-masticuri", price:"request", unit:"buc", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+]
+
+// ————————— Membrană Cramponată —————————
+const membranaCramponataProducts: Product[] = [
+  { id: "membrana-cramponata-1x20m",   name: "Membrană cramponată 1 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "membrana-cramponata-1-5x20m", name: "Membrană cramponată 1.5 x 20 m", category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "membrana-cramponata-2x20m",   name: "Membrană cramponată 2 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+]
+
 
 // ZIDĂRIE - Cărămizi (toate produsele)
 const caramidaProducts: Product[] = [
@@ -4853,6 +4951,12 @@ export const products: Product[] = [
   ...tencuieliDecorativeProducts,
   ...materialeFiniareProducts,
   ...sigilariLipiriProducts,
+  ...decobitProducts,
+  ...gamaProfesionalProducts,
+  ...gamaStandardProducts,
+  ...gamaFestaProducts,
+  ...amorseMasticuriProducts,
+  ...membranaCramponataProducts,
 ]
 
 // Funcții helper
