@@ -1,8 +1,6 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import { Search, ShoppingCart, Menu, Phone, Mail, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -23,6 +21,7 @@ import { CartDialog } from "./cart-dialog"
 export function Header() {
   const [searchQuery, setSearchQuery] = useState("")
   const [isCartOpen, setIsCartOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { state } = useCart()
 
   const handleSearch = (e: React.FormEvent) => {
@@ -91,7 +90,7 @@ export function Header() {
               </Button>
 
               {/* Mobile Menu */}
-              <Sheet>
+              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>
                   <Button variant="outline" size="sm" className="md:hidden bg-transparent">
                     <Menu className="h-4 w-4" />
@@ -99,6 +98,7 @@ export function Header() {
                 </SheetTrigger>
                 <SheetContent side="left" className="w-80">
                   <div className="py-4">
+                    {/* Search in mobile */}
                     <div className="mb-6">
                       <form onSubmit={handleSearch} className="flex">
                         <Input
@@ -113,12 +113,17 @@ export function Header() {
                         </Button>
                       </form>
                     </div>
+
+                    {/* Mobile nav links */}
                     <nav className="space-y-2">
-                      <Link href="/" className="block py-2 px-4 hover:bg-gray-100 rounded">
+                      <Link
+                        href="/"
+                        className="block py-2 px-4 hover:bg-gray-100 rounded"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
                         Acasă
                       </Link>
 
-                      {/* Mobile Categories */}
                       <div className="py-2 px-4">
                         <div className="font-medium text-gray-900 mb-2">Materiale de Construcții</div>
                         <div className="space-y-1 ml-4">
@@ -127,6 +132,7 @@ export function Header() {
                               key={category.id}
                               href={`/categorie/${category.slug}`}
                               className="block py-1 text-sm text-gray-600 hover:text-orange-600"
+                              onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {category.name}
                             </Link>
@@ -134,7 +140,11 @@ export function Header() {
                         </div>
                       </div>
 
-                      <Link href="/contact" className="block py-2 px-4 hover:bg-gray-100 rounded">
+                      <Link
+                        href="/contact"
+                        className="block py-2 px-4 hover:bg-gray-100 rounded"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
                         Contact
                       </Link>
                     </nav>
@@ -151,7 +161,7 @@ export function Header() {
                 Acasă
               </Link>
 
-              {/* Materiale de Construcții Dropdown */}
+              {/* Dropdown for categories */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="text-gray-700 hover:text-orange-600 font-medium p-0 h-auto">
@@ -160,25 +170,23 @@ export function Header() {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-80 max-h-96 overflow-y-auto">
-                  <div className="p-2">
-                    <div className="grid grid-cols-1 gap-1">
-                      {categories.map((category, index) => (
-                        <div key={category.id}>
-                          <DropdownMenuItem asChild>
-                            <Link
-                              href={`/categorie/${category.slug}`}
-                              className="flex items-center justify-between w-full px-3 py-2 hover:bg-orange-50"
-                            >
-                              <span className="font-medium">{category.name}</span>
-                              <Badge variant="secondary" className="text-xs">
-                                {category.productCount}
-                              </Badge>
-                            </Link>
-                          </DropdownMenuItem>
-                          {index < categories.length - 1 && <DropdownMenuSeparator />}
-                        </div>
-                      ))}
-                    </div>
+                  <div className="p-2 grid grid-cols-1 gap-1">
+                    {categories.map((category, idx) => (
+                      <div key={category.id}>
+                        <DropdownMenuItem asChild>
+                          <Link
+                            href={`/categorie/${category.slug}`}
+                            className="flex items-center justify-between w-full px-3 py-2 hover:bg-orange-50"
+                          >
+                            <span className="font-medium">{category.name}</span>
+                            <Badge variant="secondary" className="text-xs">
+                              {category.productCount}
+                            </Badge>
+                          </Link>
+                        </DropdownMenuItem>
+                        {idx < categories.length - 1 && <DropdownMenuSeparator />}
+                      </div>
+                    ))}
                   </div>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem asChild>
