@@ -60,17 +60,17 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
-  <div className="bg-orange-600 p-2 rounded-lg">
-    <Image
-      src="/images/logo.png"
-      alt="Logo IzoPresto"
-      width={75}
-      height={15}
-      priority
-    />
-  </div>
+         <Link href="/" className="flex items-center">
+  <Image
+    src="/images/logo.png"
+    alt="Logo IzoPresto"
+    width={75}
+    height={15}
+    priority
+    className="block"
+  />
 </Link>
+
 
 
             {/* Search Bar */}
