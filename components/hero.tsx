@@ -1,20 +1,48 @@
-// components/hero.tsx
+"use client"
+
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone } from "lucide-react"
 import Link from "next/link"
 
-export function Hero() {
+type HeroProps = {}
+
+const slides = [
+  "/images/banner.png",
+  "/images/banner2.jpg",
+  "/images/banner3.jpg",
+]
+
+export default function Hero(props: HeroProps) {
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length)
+    }, 5000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section className="relative h-screen overflow-hidden flex flex-col items-center justify-center text-white">
-      {/* Background image */}
-      <Image
-        src="/images/banner.png"
-        alt="Banner construcții"
-        fill
-        className="object-cover"
-        priority
-      />
+      {/* Slides background */}
+      {slides.map((src, idx) => (
+        <div
+          key={idx}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            idx === current ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Image
+            src={src}
+            alt={`Slide ${idx + 1}`}
+            fill
+            className="object-cover"
+            priority={idx === 0}
+          />
+        </div>
+      ))}
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
@@ -29,7 +57,6 @@ export function Hero() {
           Peste 20 de ani de experiență în furnizarea materialelor de construcții. Livrare rapidă în București și Ilfov.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* modified here: point to the overview */}
           <Link href="/categorie">
             <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
               Explorează Catalogul
