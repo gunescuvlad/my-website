@@ -5,7 +5,7 @@ export function Features() {
     {
       icon: Truck,
       title: "Livrare Rapidă",
-      description: "Livrare în 24-48h în București și Ilfov. Gratuită peste 500 RON.",
+      description: "Livrare în 24-48h în București și Ilfov. Gratuită peste 2000 RON.",
     },
     {
       icon: Shield,

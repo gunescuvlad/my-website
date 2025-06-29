@@ -23,7 +23,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-orange-600" />
-                <span>david.gunescu@izopresto.ro</span>
+                <span>office@izopresto.ro</span>
               </div>
             </div>
           </div>

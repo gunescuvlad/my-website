@@ -44,11 +44,11 @@ export function Header() {
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="h-4 w-4" />
-                <span>david.gunescu@izopresto.ro</span>
+                <span>office@izopresto.ro</span>
               </div>
             </div>
             <div className="hidden md:block">
-              <span>Livrare gratuită peste 500 RON</span>
+              <span>Livrare gratuită peste 2000 RON</span>
             </div>
           </div>
         </div>

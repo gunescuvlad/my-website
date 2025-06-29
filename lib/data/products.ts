@@ -46,7 +46,7 @@ export const categories: Category[] = [
   // Materiale Hidroizolatii
   {
     id: "hidroizolatii",
-    name: "Materiale Hidroizolații",
+    name: "MATERIALE HIDROIZOLATII",
     slug: "hidroizolatii",
     productCount:  24,
       
