@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import { categories } from "@/lib/data/products"
 
@@ -9,10 +10,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="bg-orange-600 text-white px-3 py-2 rounded-lg font-bold text-xl mb-4 inline-block">
-              IzoPresto
-            </div>
-            <p className="text-gray-300 mb-4">
+  <div className="bg-orange-600 p-2 rounded-lg mb-4 inline-block">
+    <Image
+      src="/images/logo.png"
+      alt="Logo IzoPresto"
+      width={100}      // ajustează după dimensiune
+      height={25}      // ajustează după dimensiune
+      priority={false}
+    />
+  </div>
+  <p className="text-gray-300 mb-4">
               Furnizor de încredere pentru materiale de construcții de peste 20 de ani. Calitate garantată și servicii
               profesionale.
             </p>

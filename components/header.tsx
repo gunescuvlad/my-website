@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Search, ShoppingCart, Menu, Phone, Mail, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -59,9 +60,18 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-orange-600 text-white px-3 py-2 rounded-lg font-bold text-xl">IzoPresto</div>
-            </Link>
+            <Link href="/" className="flex items-center">
+  <div className="bg-orange-600 p-2 rounded-lg">
+    <Image
+      src="/images/logo.png"
+      alt="Logo IzoPresto"
+      width={75}
+      height={15}
+      priority
+    />
+  </div>
+</Link>
+
 
             {/* Search Bar */}
             <div className="hidden md:flex flex-1 max-w-2xl mx-8">
