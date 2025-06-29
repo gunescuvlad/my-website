@@ -14,14 +14,16 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function Category({ params }: CategoryPageProps) {
-  const category = categories.find((cat) => cat.slug === params.slug)
+// Must be async so Next.js can "await" params before use
+export default async function Category({ params }: CategoryPageProps) {
+  // dummy await to satisfy Next.js sync-dynamic-apis requirement
+  await Promise.resolve()
 
+  const category = categories.find((cat) => cat.slug === params.slug)
   if (!category) {
     notFound()
   }
 
   const products = getProductsByCategory(params.slug)
-
   return <CategoryPage category={category} products={products} />
 }

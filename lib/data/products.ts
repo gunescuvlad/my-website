@@ -48,7 +48,7 @@ export const categories: Category[] = [
     id: "hidroizolatii",
     name: "MATERIALE HIDROIZOLATII",
     slug: "hidroizolatii",
-    productCount:  24,
+    productCount:  23,
       
     subcategories: [
       { id: "decobit",       name: "DECOBIT – Carton Bituminat", slug: "decobit",       productCount: 2 },
@@ -840,20 +840,20 @@ const decobitProducts: Product[] = [
 
 // ————————— Gama Profesional —————————
 const gamaProfesionalProducts: Product[] = [
-  { id: "arco-forato-v-0-85",          name: "ARCO Forato V 0.85",         category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
-  { id: "arco-thermo-ad-v-2mm",       name: "Arco Thermo AD V 2mm",       category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
-  { id: "arco-antiroot-plasto-p-3mm", name: "ARCO Antiroot Plasto P 3mm", category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
-  { id: "arcotherm-dx2",             name: "Arcotherm DX2",             category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "arco-forato-v-0-85",          name: "ARCO Forato V 0.85",         category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/Forato.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "arco-thermo-ad-v-2mm",       name: "Arco Thermo AD V 2mm",       category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/thermo.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "arco-antiroot-plasto-p-3mm", name: "ARCO Antiroot Plasto P 3mm", category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/Plasto.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "arcotherm-dx2",             name: "Arcotherm DX2",             category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/therm.jpg"], inStock:true, rating:0, reviews:0 },
 ]
 
 // ————————— Gama Standard —————————
 const gamaStandardProducts: Product[] = [
-  { id: "novatec-pa-4-5", name: "Novatec PA 4.5", category: "hidroizolatii", subcategory: "gama-standard", price: "request", unit: "mp", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "novatec-pa-4-5", name: "Novatec PA 4.5", category: "hidroizolatii", subcategory: "gama-standard", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/novatec.jpg"], inStock:true, rating:0, reviews:0 },
 ]
 
 // ————————— Gama Festa —————————
 const gamaFestaProducts: Product[] = [
-  "2","V3","P3","V4","VA4","PA3.5","VA3.5","P4","PA4","VA4.5","PA4.5"
+"V3","P3","V4","VA4","PA3.5","VA3.5","P4","PA4","VA4.5","PA4.5"
 ].map((code) => ({
   id: `festa-plus-${code.replace(/\./g,"-")}`,
   name: `Festa Plus ${code}`,
@@ -863,7 +863,7 @@ const gamaFestaProducts: Product[] = [
   unit: "mp",
   description: "",
   specifications: {},
-  images: ["/placeholder.svg"],
+  images: ["/images/plus.jpg"],
   inStock: true,
   rating: 0,
   reviews: 0,
@@ -871,16 +871,16 @@ const gamaFestaProducts: Product[] = [
 
 // ————————— Amorse și Masticuri —————————
 const amorseMasticuriProducts: Product[] = [
-  { id: "elastobit-20kg",       name: "Elastobit (20kg)",       category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
-  { id: "superbit-25kg",        name: "Superbit (25kg)",        category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
-  { id: "izobituprimer-20l",    name: "Amorsa Bituminoasă IzoBituprimer 20L (Solvent)", category: "hidroizolatii", subcategory: "amorse-masticuri", price:"request", unit:"buc", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "elastobit-20kg",       name: "Elastobit (20kg)",       category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/images/elastobit.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "superbit-25kg",        name: "Superbit (25kg)",        category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/images/superbit.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "izobituprimer-20l",    name: "Amorsa Bituminoasă IzoBituprimer 20L (Solvent)", category: "hidroizolatii", subcategory: "amorse-masticuri", price:"request", unit:"buc", description:"", specifications:{}, images:["/images/izobit.jpg"], inStock:true, rating:0, reviews:0 },
 ]
 
 // ————————— Membrană Cramponată —————————
 const membranaCramponataProducts: Product[] = [
-  { id: "membrana-cramponata-1x20m",   name: "Membrană cramponată 1 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
-  { id: "membrana-cramponata-1-5x20m", name: "Membrană cramponată 1.5 x 20 m", category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
-  { id: "membrana-cramponata-2x20m",   name: "Membrană cramponată 2 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/placeholder.svg"], inStock:true, rating:0, reviews:0 },
+  { id: "membrana-cramponata-1x20m",   name: "Membrană cramponată 1 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true, rating:0, reviews:0 },
+  { id: "membrana-cramponata-1-5x20m", name: "Membrană cramponată 1.5 x 20 m", category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true, rating:0, reviews:0 },
+  { id: "membrana-cramponata-2x20m",   name: "Membrană cramponată 2 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true, rating:0, reviews:0 },
 ]
 
 
@@ -4984,7 +4984,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS50",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps50-20cm.webp"],
+    images: ["/images/eps50.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5002,7 +5002,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS60",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps60-20cm.webp"],
+    images: ["/images/eps50.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5021,7 +5021,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS70",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps60-20cm.webp"],
+    images: ["/images/eps50.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5040,7 +5040,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS80",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps60-20cm.webp"],
+    images: ["/images/eps80.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5059,7 +5059,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS100",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps60-20cm.webp"],
+    images: ["/images/eps100.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5078,7 +5078,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS120",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps60-20cm.webp"],
+    images: ["/images/eps100.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5097,7 +5097,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS150",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps60-20cm.webp"],
+    images: ["/images/eps100.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5116,7 +5116,7 @@ const polistirenExpandatProducts: Product[] = [
       Densitate: "EPS200",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps60-20cm.webp"],
+    images: ["/images/eps100.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5136,7 +5136,7 @@ const polistirenExtrudatProducts: Product[] = [
       Grosime: "50mm",
       Tip: "XPS",
     },
-    images: ["/images/polistiren/xps-50mm.webp"],
+    images: ["/images/extrudat.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5154,7 +5154,7 @@ const polistirenExtrudatProducts: Product[] = [
       Grosime: "20mm",
       Tip: "XPS",
     },
-    images: ["/images/polistiren/xps-50mm.webp"],
+    images: ["/images/extrudat.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5172,7 +5172,7 @@ const polistirenExtrudatProducts: Product[] = [
       Grosime: "100mm",
       Tip: "XPS",
     },
-    images: ["/images/polistiren/xps-50mm.webp"],
+    images: ["/images/extrudat.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5190,7 +5190,7 @@ const polistirenExtrudatProducts: Product[] = [
       Grosime: "30mm",
       Tip: "XPS",
     },
-    images: ["/images/polistiren/xps-50mm.webp"],
+    images: ["/images/extrudat.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5211,7 +5211,7 @@ const polistirenGrafitatProducts: Product[] = [
       Densitate: "EPS80 Grafitat",
       Brand: "Sikatherm®",
     },
-    images: ["/images/polistiren/eps80-grafitat-20cm.webp"],
+    images: ["/images/grafitat.jpg"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5232,7 +5232,7 @@ const polistirenSpecialProducts: Product[] = [
       Grosime: "3cm",
       Tip: "PIR + barieră vapori",
     },
-    images: ["/images/polistiren/pir-bv-bv-3cm.webp"],
+    images: ["/images/top1.png"],
     inStock: true,
     rating: 0,
     reviews: 0,
@@ -5250,7 +5250,7 @@ const polistirenSpecialProducts: Product[] = [
       Grosime: "3cm",
       Tip: "PIR + folie aluminiu",
     },
-    images: ["/images/polistiren/pir-al-al-3cm.webp"],
+    images: ["/images/top2.png"],
     inStock: true,
     rating: 0,
     reviews: 0,

@@ -18,7 +18,12 @@ export const metadata: Metadata = {
   keywords:
     "materiale constructii, bucuresti, bca, fier beton, ciment, adezivi, gips carton, livrare rapida",
   generator: "v0.dev",
-}
+   icons: {
+  icon: "/favicon.ico",        // browser favicon
+   shortcut: "/favicon.ico",    // fallback
+   apple: "/favicon.png",       // apple touch icon, dacă ai
+ },
+  }
 
 export default function RootLayout({
   children,
