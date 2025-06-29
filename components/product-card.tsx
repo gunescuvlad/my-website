@@ -69,16 +69,32 @@ export function ProductCard({ product }: ProductCardProps) {
           <span className="text-sm text-gray-500 ml-2">({product.reviews} recenzii)</span>
         </div>
 
+        {/* ——— Preț la cerere + WhatsApp ——— */}
         <div className="mb-4">
-          {typeof product.price === "number" ? (
-            <div className="flex items-baseline space-x-2">
-              <span className="text-2xl font-bold text-gray-900">{product.price.toFixed(2)} RON</span>
-              <span className="text-sm text-gray-500">/{product.unit}</span>
-            </div>
-          ) : (
-            <div className="text-lg font-semibold text-orange-600">Preț la cerere</div>
-          )}
+          <div className="flex items-center justify-between">
+            <span className="text-2xl font-bold text-orange-600">Preț la cerere</span>
+            <a
+              href={`https://wa.me/40721379761?text=${encodeURIComponent(
+                `Bună ziua! Aș dori o ofertă pentru produsul ${product.name}`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-green-500"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.1-.472-.149-.672.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.655-2.059-.173-.298-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.298.298-.497.099-.198.05-.372-.025-.52-.074-.148-.672-1.612-.92-2.206-.242-.579-.487-.5-.672-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.148.198 2.095 3.2 5.076 4.487.709.306 1.26.489 1.689.627.71.227 1.355.195 1.866.118.569-.085 1.758-.719 2.006-1.412.248-.694.248-1.289.173-1.412-.074-.124-.272-.198-.57-.347z" />
+                <path d="M12.002.163C5.373.163-.163 5.7-.163 12.33c0 2.109.553 4.192 1.605 6.017L.002 24l5.661-1.45C7.755 23.318 9.821 23.663 12 23.663c6.63 0 12.168-5.536 12.168-12.333C24.168 5.7 18.63.163 12.002.163zm0 22.38c-1.995 0-3.944-.53-5.616-1.532l-.4-.231-3.36.859.9-3.269-.26-.42C2.929 15.555 2.4 13.563 2.4 11.33 2.4 6.129 6.801 1.73 12.002 1.73s9.602 4.399 9.602 9.6c0 5.201-4.401 9.603-9.602 9.603z" />
+              </svg>
+            </a>
+          </div>
         </div>
+        {/* —————————————————————————— */}
+
       </CardContent>
 
       <CardFooter className="p-4 pt-0">
