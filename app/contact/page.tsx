@@ -113,7 +113,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Adresa</h3>
                 <p className="text-gray-600">
-                  Strada Exemplu nr. 123
+                  Str Dr. Constantin Severeanu nr. 9
                   <br />
                   București, România
                 </p>
@@ -126,7 +126,7 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-                <p className="text-gray-600">david.gunescu@izopresto.ro</p>
+                <p className="text-gray-600">office@izopresto.ro</p>
               </div>
 
               <div>

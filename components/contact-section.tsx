@@ -72,8 +72,8 @@ export function ContactSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:david.gunescu@izopresto.ro" className="text-lg hover:text-orange-600">
-                  david.gunescu@izopresto.ro
+                <a href="mailto:office@izopresto.ro" className="text-lg hover:text-orange-600">
+                  office@izopresto.ro
                 </a>
               </CardContent>
             </Card>
