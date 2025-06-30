@@ -19,6 +19,7 @@ export interface Category {
   id: string
   name: string
   slug: string
+  image?: string 
   subcategories: Subcategory[]
   productCount: number
 }
@@ -35,6 +36,7 @@ export const categories: Category[] = [
     id: "metale",
     name: "METALE",
     slug: "metale",
+    image: "/images/metalec.png",
     productCount: 15,
     subcategories: [
       { id: "fier-beton", name: "Fier beton", slug: "fier-beton", productCount: 10 },
@@ -48,6 +50,7 @@ export const categories: Category[] = [
     id: "hidroizolatii",
     name: "MATERIALE HIDROIZOLATII",
     slug: "hidroizolatii",
+    image:"/images/materialehidroizolatiic.jpg",
     productCount:  23,
       
     subcategories: [
@@ -65,6 +68,7 @@ export const categories: Category[] = [
   id: "polistiren",
   name: "POLISTIREN",
   slug: "polistiren",
+  image: "/images/polistirenc.jpg",
   productCount:  15,
   subcategories: [
     {
@@ -100,6 +104,7 @@ export const categories: Category[] = [
     name: "ZIDĂRIE",
     slug: "zidarie",
     productCount: 29,
+    image: "/images/zidariec.jpg",
     subcategories: [
       { id: "bca", name: "BCA", slug: "bca", productCount: 15 },
       { id: "caramida", name: "Cărămizi", slug: "caramida", productCount: 14 },
@@ -110,6 +115,7 @@ export const categories: Category[] = [
     name: "LIANȚI",
     slug: "lianti",
     productCount: 65,
+    image: "/images/liantic.jpg",
     subcategories: [
       { id: "amorse", name: "Amorse", slug: "amorse", productCount: 13 },
       { id: "ciment", name: "Ciment", slug: "ciment", productCount: 3 },
@@ -123,6 +129,7 @@ export const categories: Category[] = [
     name: "ADEZIVI",
     slug: "adezivi",
     productCount: 33,
+    image: "/images/adezivic.jpg",
     subcategories: [
       { id: "adezivi-gips-carton", name: "Adezivi gips carton", slug: "adezivi-gips-carton", productCount: 1 },
       {
@@ -141,6 +148,7 @@ export const categories: Category[] = [
     name: "GIPS CARTON",
     slug: "gips-carton",
     productCount: 85,
+    image: "/images/gipscartonc.webp",
     subcategories: [
       { id: "accesorii-gips-carton", name: "Accesorii gips carton", slug: "accesorii-gips-carton", productCount: 13 },
       { id: "placi-gips-carton", name: "Plăci gips carton", slug: "placi-gips-carton", productCount: 18 },
@@ -152,6 +160,7 @@ export const categories: Category[] = [
     name: "TEGO",
     slug: "tego",
     productCount: 3,
+    image: "/images/tegoc.webp",
     subcategories: [{ id: "panouri-tego", name: "Panouri TEGO", slug: "panouri-tego", productCount: 3 }],
   },
   {
@@ -159,6 +168,7 @@ export const categories: Category[] = [
     name: "TENCUIELI DECORATIVE",
     slug: "tencuieli-decorative",
     productCount: 6,
+    image: "/images/tencuialac.png",
     subcategories: [
       { id: "tencuieli-decorative", name: "Tencuieli decorative", slug: "tencuieli-decorative", productCount: 6 },
     ],
@@ -168,6 +178,7 @@ export const categories: Category[] = [
     name: "PRODUSE SIKA",
     slug: "produse-sika",
     productCount: 18,
+    image: "/images/produsesikac.png",
     subcategories: [
       { id: "materiale-finisare", name: "Materiale finisare", slug: "materiale-finisare", productCount: 9 },
       { id: "sigilari-lipiri", name: "Sigilări și lipiri", slug: "sigilari-lipiri", productCount: 9 },
@@ -178,6 +189,7 @@ export const categories: Category[] = [
    name: "ACCESORII TERMOSISTEM",
     slug: "accesorii-termosistem",
     productCount: 11,
+    image: "/images/accesoriic.jpg",
     subcategories: [], 
  },
 ]
@@ -4280,7 +4292,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS50.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS50",
       Brand: "Sikatherm®",
     },
@@ -4298,7 +4310,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS60.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS60",
       Brand: "Sikatherm®",
     },
@@ -4317,7 +4329,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS70.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS70",
       Brand: "Sikatherm®",
     },
@@ -4336,7 +4348,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS80.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS80",
       Brand: "Sikatherm®",
     },
@@ -4355,7 +4367,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS100.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS100",
       Brand: "Sikatherm®",
     },
@@ -4374,7 +4386,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS120.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS120",
       Brand: "Sikatherm®",
     },
@@ -4393,7 +4405,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS150.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS150",
       Brand: "Sikatherm®",
     },
@@ -4412,7 +4424,7 @@ const polistirenExpandatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren expandat EPS200.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS200",
       Brand: "Sikatherm®",
     },
@@ -4507,7 +4519,7 @@ const polistirenGrafitatProducts: Product[] = [
     unit: "buc",
     description: "Plăci de polistiren grafitat EPS80.",
     specifications: {
-      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
+      Grosime: "Grosimile variază între 20 mm și 250 mm, în funcție de cerința clientului.",
       Densitate: "EPS80 Grafitat",
       Brand: "Sikatherm®",
     },
