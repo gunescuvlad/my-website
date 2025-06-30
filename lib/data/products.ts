@@ -4273,14 +4273,14 @@ const sigilariSiLipiriProducts: Product[] = [
 const polistirenExpandatProducts: Product[] = [
   {
     id: "eps50-20cm",
-    name: "Polistiren expandat Sikatherm® EPS50 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS50 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS50, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS50.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS50",
       Brand: "Sikatherm®",
     },
@@ -4291,14 +4291,14 @@ const polistirenExpandatProducts: Product[] = [
   },
   {
     id: "eps60-20cm",
-    name: "Polistiren expandat Sikatherm® EPS60 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS60 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS60, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS60.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS60",
       Brand: "Sikatherm®",
     },
@@ -4310,14 +4310,14 @@ const polistirenExpandatProducts: Product[] = [
 
   {
     id: "eps70-20cm",
-    name: "Polistiren expandat Sikatherm® EPS70 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS70 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS70, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS70.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS70",
       Brand: "Sikatherm®",
     },
@@ -4329,14 +4329,14 @@ const polistirenExpandatProducts: Product[] = [
  
   {
     id: "eps80-20cm",
-    name: "Polistiren expandat Sikatherm® EPS80 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS80 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS80, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS80.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS80",
       Brand: "Sikatherm®",
     },
@@ -4348,14 +4348,14 @@ const polistirenExpandatProducts: Product[] = [
 
   {
     id: "eps100-20cm",
-    name: "Polistiren expandat Sikatherm® EPS100 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS100 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS100, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS100.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS100",
       Brand: "Sikatherm®",
     },
@@ -4367,14 +4367,14 @@ const polistirenExpandatProducts: Product[] = [
 
   {
     id: "eps120-20cm",
-    name: "Polistiren expandat Sikatherm® EPS120 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS120 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS120, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS120.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS120",
       Brand: "Sikatherm®",
     },
@@ -4386,14 +4386,14 @@ const polistirenExpandatProducts: Product[] = [
 
   {
     id: "eps150-20cm",
-    name: "Polistiren expandat Sikatherm® EPS150 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS150 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS150, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS150.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS150",
       Brand: "Sikatherm®",
     },
@@ -4405,14 +4405,14 @@ const polistirenExpandatProducts: Product[] = [
 
   {
     id: "eps200-20cm",
-    name: "Polistiren expandat Sikatherm® EPS200 20 cm",
+    name: "Polistiren expandat Sikatherm® EPS200 ",
     category: "polistiren",
     subcategory: "polistiren-expandat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren expandat EPS200, grosime 20cm.",
+    description: "Plăci de polistiren expandat EPS200.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS200",
       Brand: "Sikatherm®",
     },
@@ -4500,14 +4500,14 @@ const polistirenExtrudatProducts: Product[] = [
 const polistirenGrafitatProducts: Product[] = [
   {
     id: "eps80-grafitat-20cm",
-    name: "Polistiren Grafitat Sikatherm® EPS80 20 cm",
+    name: "Polistiren Grafitat Sikatherm® EPS80 ",
     category: "polistiren",
     subcategory: "polistiren-grafitat",
     price: "request",
     unit: "buc",
-    description: "Plăci de polistiren grafitat EPS80, grosime 20cm.",
+    description: "Plăci de polistiren grafitat EPS80.",
     specifications: {
-      Grosime: "20cm",
+      Grosime: "Grosimile variaza intre 20 mm si 250 mm functie de cerinta clientului",
       Densitate: "EPS80 Grafitat",
       Brand: "Sikatherm®",
     },

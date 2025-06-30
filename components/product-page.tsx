@@ -9,8 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useCart } from "@/lib/context/cart-context"
-import { type Product, products, categories } from "@/lib/data/products";
-
+import { type Product, products, categories } from "@/lib/data/products"
 
 interface ProductPageProps {
   product: Product
@@ -25,9 +24,8 @@ export function ProductPage({ product }: ProductPageProps) {
   const subcategory = category?.subcategories.find((sub) => sub.id === product.subcategory)
 
   const similarProducts = products
-  .filter((p) => p.subcategory === product.subcategory && p.id !== product.id)
-  .slice(0, 4);
-
+    .filter((p) => p.subcategory === product.subcategory && p.id !== product.id)
+    .slice(0, 4)
 
   const addToCart = () => {
     dispatch({
@@ -41,7 +39,9 @@ export function ProductPage({ product }: ProductPageProps) {
     return Array.from({ length: 5 }, (_, i) => (
       <Star
         key={i}
-        className={`h-5 w-5 ${i < Math.floor(rating) ? "text-yellow-400 fill-current" : "text-gray-300"}`}
+        className={`h-5 w-5 ${
+          i < Math.floor(rating) ? "text-yellow-400 fill-current" : "text-gray-300"
+        }`}
       />
     ))
   }
@@ -51,6 +51,11 @@ export function ProductPage({ product }: ProductPageProps) {
     const whatsappUrl = `https://wa.me/40721379761?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
+
+  // Verificăm dacă ar trebui să afișăm tabelul
+  const showSpecTable =
+    product.subcategory === "polistiren-expandat" ||
+    product.subcategory === "polistiren-grafitat"
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -134,7 +139,9 @@ export function ProductPage({ product }: ProductPageProps) {
           <div className="mb-6">
             {typeof product.price === "number" ? (
               <div className="flex items-baseline space-x-2">
-                <span className="text-4xl font-bold text-gray-900">{product.price.toFixed(2)} RON</span>
+                <span className="text-4xl font-bold text-gray-900">
+                  {product.price.toFixed(2)} RON
+                </span>
                 <span className="text-lg text-gray-500">/{product.unit}</span>
               </div>
             ) : (
@@ -161,7 +168,11 @@ export function ProductPage({ product }: ProductPageProps) {
               <div className="flex items-center space-x-4 mb-4">
                 <span className="font-medium">Cantitate:</span>
                 <div className="flex items-center space-x-2">
-                  <Button variant="outline" size="sm" onClick={() => setQuantity(Math.max(1, quantity - 1))}>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                  >
                     <Minus className="h-4 w-4" />
                   </Button>
                   <span className="w-12 text-center font-medium">{quantity}</span>
@@ -173,7 +184,9 @@ export function ProductPage({ product }: ProductPageProps) {
 
               {typeof product.price === "number" && (
                 <div className="mb-4">
-                  <span className="text-lg font-semibold">Total: {(product.price * quantity).toFixed(2)} RON</span>
+                  <span className="text-lg font-semibold">
+                    Total: {(product.price * quantity).toFixed(2)} RON
+                  </span>
                 </div>
               )}
 
@@ -204,12 +217,27 @@ export function ProductPage({ product }: ProductPageProps) {
           <TabsTrigger value="reviews">Recenzii ({product.reviews})</TabsTrigger>
         </TabsList>
 
+        {/* SPECIFICATIONS */}
         <TabsContent value="specifications">
           <Card>
             <CardHeader>
               <CardTitle>Specificații Tehnice</CardTitle>
             </CardHeader>
             <CardContent>
+              {/* Afișăm întâi imaginea-tabel, dacă e cazul */}
+              {showSpecTable && (
+                <div className="mb-6 text-center">
+                  <Image
+                    src="/images/spec-table.png"
+                    alt="Tabel grosimi polistiren"
+                    width={800}
+                    height={400}
+                    className="mx-auto rounded-lg shadow"
+                  />
+                </div>
+              )}
+
+              {/* Apoi lista de specificații textuale */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <div key={key} className="flex justify-between py-2 border-b">
@@ -222,6 +250,7 @@ export function ProductPage({ product }: ProductPageProps) {
           </Card>
         </TabsContent>
 
+        {/* REVIEWS */}
         <TabsContent value="reviews">
           <Card>
             <CardHeader>
@@ -260,7 +289,9 @@ export function ProductPage({ product }: ProductPageProps) {
                     </h3>
                   </Link>
                   {typeof similarProduct.price === "number" ? (
-                    <p className="text-lg font-bold text-gray-900">{similarProduct.price.toFixed(2)} RON</p>
+                    <p className="text-lg font-bold text-gray-900">
+                      {similarProduct.price.toFixed(2)} RON
+                    </p>
                   ) : (
                     <p className="text-orange-600 font-medium">Preț la cerere</p>
                   )}
