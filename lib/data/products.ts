@@ -36,7 +36,7 @@ export const categories: Category[] = [
     id: "metale",
     name: "METALE",
     slug: "metale",
-    image: "/images/metalec.png",
+    image: "/images/metalec.jpg",
     productCount: 15,
     subcategories: [
       { id: "fier-beton", name: "Fier beton", slug: "fier-beton", productCount: 10 },
