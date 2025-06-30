@@ -5,7 +5,13 @@ import type { Category, Product } from "@/lib/data/products"
 import { ProductCard } from "@/components/product-card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { Search, Grid, List } from "lucide-react"
 import Link from "next/link"
@@ -22,13 +28,19 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid")
 
   const filteredProducts = products
+    // 1) Filtrare după text și subcategorie
     .filter((product) => {
       const matchesSearch =
         product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         product.description.toLowerCase().includes(searchTerm.toLowerCase())
-      const matchesSubcategory = selectedSubcategory === "all" || product.subcategory === selectedSubcategory
+      const matchesSubcategory =
+        selectedSubcategory === "all" ||
+        product.subcategory === selectedSubcategory
       return matchesSearch && matchesSubcategory
     })
+    // 2) Eliminare duplicate pe baza id-ului
+    .filter((prod, idx, arr) => arr.findIndex((p) => p.id === prod.id) === idx)
+    // 3) Sortare
     .sort((a, b) => {
       switch (sortBy) {
         case "price":
@@ -55,13 +67,31 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
 
       {/* Page Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">{category.name}</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">
+          {category.name}
+        </h1>
         <p className="text-lg text-gray-600 mb-4">
-          Descoperiți gama noastră completă de {category.name.toLowerCase()} de calitate superioară.
+          Descoperiți gama noastră completă de{" "}
+          {category.name.toLowerCase()} de calitate superioară.
         </p>
+
+        {/* Badges clickabile pentru filtrare rapidă */}
         <div className="flex flex-wrap gap-2">
+          <Badge
+            key="all"
+            className="cursor-pointer"
+            variant={selectedSubcategory === "all" ? "default" : "outline"}
+            onClick={() => setSelectedSubcategory("all")}
+          >
+            Toate ({products.length})
+          </Badge>
           {category.subcategories.map((sub) => (
-            <Badge key={sub.id} variant="outline">
+            <Badge
+              key={sub.id}
+              className="cursor-pointer"
+              variant={selectedSubcategory === sub.id ? "default" : "outline"}
+              onClick={() => setSelectedSubcategory(sub.id)}
+            >
               {sub.name} ({sub.productCount})
             </Badge>
           ))}
@@ -74,7 +104,7 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="font-semibold text-gray-900 mb-4">Filtrare</h3>
 
-            {/* Subcategories Filter */}
+            {/* Subcategories Filter (radio-uri) */}
             <div className="mb-6">
               <h4 className="font-medium text-gray-700 mb-3">Subcategorii</h4>
               <div className="space-y-2">
@@ -114,6 +144,7 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
           {/* Search and Controls */}
           <div className="bg-white p-6 rounded-lg shadow-md mb-6">
             <div className="flex flex-col md:flex-row gap-4 mb-4">
+              {/* Search */}
               <div className="flex-1">
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -126,6 +157,7 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
                   />
                 </div>
               </div>
+              {/* Sort */}
               <Select value={sortBy} onValueChange={setSortBy}>
                 <SelectTrigger className="w-full md:w-48">
                   <SelectValue placeholder="Sortează după" />
@@ -136,6 +168,7 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
                   <SelectItem value="rating">Rating</SelectItem>
                 </SelectContent>
               </Select>
+              {/* View toggle */}
               <div className="flex space-x-2">
                 <Button
                   variant={viewMode === "grid" ? "default" : "outline"}
@@ -163,7 +196,9 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
           {filteredProducts.length > 0 ? (
             <div
               className={`grid gap-6 ${
-                viewMode === "grid" ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : "grid-cols-1"
+                viewMode === "grid"
+                  ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                  : "grid-cols-1"
               }`}
             >
               {filteredProducts.map((product) => (
