@@ -35,7 +35,7 @@ export default function CheckoutPage() {
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null)
   const recaptchaRef = useRef<any>(null) // <--- aici definim ref cu tip any
 
-  const deliveryFee = state.total >= 500 ? 0 : 50
+  const deliveryFee = state.total >= 2000 ? 0 : 300
   const finalTotal = state.total + deliveryFee
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -329,9 +329,9 @@ export default function CheckoutPage() {
                     {deliveryFee === 0 ? "GRATUITĂ" : `${deliveryFee.toFixed(2)} RON`}
                   </span>
                 </div>
-                {state.total < 500 && deliveryFee > 0 && (
+                {state.total < 2000 && deliveryFee > 0 && (
                   <p className="text-xs text-gray-500">
-                    Adăugați încă {(500 - state.total).toFixed(2)} RON pentru livrare gratuită
+                    Adăugați încă {(2000 - state.total).toFixed(2)} RON pentru livrare gratuită
                   </p>
                 )}
                 <Separator />
