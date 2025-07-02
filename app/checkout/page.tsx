@@ -19,22 +19,15 @@ export default function CheckoutPage() {
   const { state, dispatch } = useCart()
   const [step, setStep] = useState(1)
   const [formData, setFormData] = useState({
-    // Contact Info
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
-
-    // Delivery Info
     address: "",
     city: "",
     postalCode: "",
     deliveryMethod: "standard",
-
-    // Payment Info
     paymentMethod: "card",
-
-    // Additional Info
     notes: "",
   })
 
@@ -48,11 +41,43 @@ export default function CheckoutPage() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Aici ar fi logica pentru procesarea comenzii
-    alert("Comanda a fost plasată cu succes! Vă vom contacta în curând.")
-    dispatch({ type: "CLEAR_CART" })
+
+    const orderData = {
+      customerName: `${formData.firstName} ${formData.lastName}`,
+      customerEmail: formData.email,
+      customerPhone: formData.phone,
+      address: `${formData.address}, ${formData.city}, ${formData.postalCode}`,
+      items: state.items.map((item) => ({
+        name: item.product.name,
+        quantity: item.quantity,
+        price: item.product.price,
+      })),
+      total: finalTotal,
+    }
+
+    try {
+      const response = await fetch("/api/order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(orderData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok && result.success) {
+        alert("✅ Detaliile comenzii au fost plasate.\nVeți fi contactați de către echipa noastră în curând!")
+
+        dispatch({ type: "CLEAR_CART" })
+      } else {
+        alert("❌ Eroare la trimiterea comenzii: " + result.error)
+        console.error("Eroare API:", result)
+      }
+    } catch (error) {
+      alert("❌ Eroare rețea sau server")
+      console.error("Eroare fetch:", error)
+    }
   }
 
   if (state.items.length === 0) {
@@ -81,10 +106,8 @@ export default function CheckoutPage() {
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Finalizare Comandă</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Main Form */}
         <div className="lg:col-span-2">
           <form onSubmit={handleSubmit} className="space-y-8">
-            {/* Step 1: Contact Information */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -98,51 +121,24 @@ export default function CheckoutPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="firstName">Prenume *</Label>
-                    <Input
-                      id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} required />
                   </div>
                   <div>
                     <Label htmlFor="lastName">Nume *</Label>
-                    <Input
-                      id="lastName"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} required />
                   </div>
                 </div>
                 <div>
                   <Label htmlFor="email">Email *</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                  />
+                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} required />
                 </div>
                 <div>
                   <Label htmlFor="phone">Telefon *</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    required
-                  />
+                  <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} required />
                 </div>
               </CardContent>
             </Card>
 
-            {/* Step 2: Delivery Information */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -204,7 +200,6 @@ export default function CheckoutPage() {
               </CardContent>
             </Card>
 
-            {/* Step 3: Payment Information */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -244,7 +239,6 @@ export default function CheckoutPage() {
               </CardContent>
             </Card>
 
-            {/* Additional Notes */}
             <Card>
               <CardHeader>
                 <CardTitle>Observații Suplimentare</CardTitle>
@@ -266,14 +260,12 @@ export default function CheckoutPage() {
           </form>
         </div>
 
-        {/* Order Summary */}
         <div className="lg:col-span-1">
           <Card className="sticky top-4">
             <CardHeader>
               <CardTitle>Sumar Comandă</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              {/* Cart Items */}
               <div className="space-y-3 max-h-64 overflow-y-auto">
                 {state.items.map((item) => (
                   <div key={item.product.id} className="flex items-center space-x-3">
@@ -302,7 +294,6 @@ export default function CheckoutPage() {
 
               <Separator />
 
-              {/* Totals */}
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
                   <span>Subtotal:</span>

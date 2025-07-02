@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { useCart } from "@/lib/context/cart-context"
 import Image from "next/image"
-import Link from "next/link"
 
 interface CartDialogProps {
   open: boolean
   onOpenChange: (open: boolean) => void
+  onCheckout: () => void
 }
 
-export function CartDialog({ open, onOpenChange }: CartDialogProps) {
+export function CartDialog({ open, onOpenChange, onCheckout }: CartDialogProps) {
   const { state, dispatch } = useCart()
 
   const updateQuantity = (productId: string, quantity: number) => {
@@ -48,7 +48,6 @@ export function CartDialog({ open, onOpenChange }: CartDialogProps) {
           </div>
         ) : (
           <div className="space-y-4">
-            {/* Cart Items */}
             <div className="space-y-4 max-h-96 overflow-y-auto">
               {state.items.map((item) => (
                 <div key={item.product.id} className="flex items-center space-x-4 p-4 border rounded-lg">
@@ -59,7 +58,6 @@ export function CartDialog({ open, onOpenChange }: CartDialogProps) {
                     height={60}
                     className="rounded-md object-cover"
                   />
-
                   <div className="flex-1 min-w-0">
                     <h4 className="font-medium text-sm truncate">{item.product.name}</h4>
                     <p className="text-sm text-gray-500">
@@ -68,7 +66,6 @@ export function CartDialog({ open, onOpenChange }: CartDialogProps) {
                         : "Preț la cerere"}
                     </p>
                   </div>
-
                   <div className="flex items-center space-x-2">
                     <Button
                       variant="outline"
@@ -86,7 +83,6 @@ export function CartDialog({ open, onOpenChange }: CartDialogProps) {
                       <Plus className="h-3 w-3" />
                     </Button>
                   </div>
-
                   <div className="text-right">
                     {typeof item.product.price === "number" ? (
                       <p className="font-medium text-sm">{(item.product.price * item.quantity).toFixed(2)} RON</p>
@@ -94,7 +90,6 @@ export function CartDialog({ open, onOpenChange }: CartDialogProps) {
                       <p className="text-sm text-orange-600">Preț la cerere</p>
                     )}
                   </div>
-
                   <Button
                     variant="ghost"
                     size="sm"
@@ -107,7 +102,6 @@ export function CartDialog({ open, onOpenChange }: CartDialogProps) {
               ))}
             </div>
 
-            {/* Cart Summary */}
             <div className="border-t pt-4 space-y-2">
               <div className="flex justify-between text-sm">
                 <span>Subtotal:</span>
@@ -130,14 +124,16 @@ export function CartDialog({ open, onOpenChange }: CartDialogProps) {
               </div>
             </div>
 
-            {/* Action Buttons */}
             <div className="flex space-x-2 pt-4">
               <Button variant="outline" className="flex-1 bg-transparent" onClick={() => onOpenChange(false)}>
                 Continuați cumpărăturile
               </Button>
-              <Link href="/checkout" className="flex-1">
-                <Button className="w-full bg-orange-600 hover:bg-orange-700">Finalizați comanda</Button>
-              </Link>
+              <Button
+                className="flex-1 w-full bg-orange-600 hover:bg-orange-700"
+                onClick={onCheckout}
+              >
+                Finalizați comanda
+              </Button>
             </div>
           </div>
         )}
