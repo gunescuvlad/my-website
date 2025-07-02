@@ -126,9 +126,49 @@ export function Header() {
                     <Menu className="h-4 w-4" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-80">
-                  {/* ... conținut sheet ... */}
-                </SheetContent>
+                <SheetContent side="left" className="w-80 p-4">
+  <nav className="flex flex-col space-y-4">
+    <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium hover:text-orange-600">
+      Acasă
+    </Link>
+
+    {/* Materiale de Construcții - submeniu */}
+    <details className="group border rounded p-2">
+      <summary className="flex justify-between items-center cursor-pointer text-lg font-medium hover:text-orange-600">
+        Materiale de Construcții
+        <svg
+          className="w-4 h-4 transform group-open:rotate-180 transition-transform"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+      <div className="mt-2 pl-4 flex flex-col space-y-1 max-h-60 overflow-y-auto">
+        {categories.map((cat) => (
+          <Link
+            key={cat.id}
+            href={`/categorie/${cat.slug}`}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-base hover:text-orange-600"
+          >
+            {cat.name} ({cat.productCount})
+          </Link>
+        ))}
+      </div>
+    </details>
+
+    <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium hover:text-orange-600">
+      Contact
+    </Link>
+    <Link href="/despre" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium hover:text-orange-600">
+      Despre Noi
+    </Link>
+  </nav>
+</SheetContent>
+
               </Sheet>
             </div>
           </div>
