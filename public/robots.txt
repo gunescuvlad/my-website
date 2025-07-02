@@ -2,8 +2,6 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://izopresto.ro
 
 # Sitemaps
 Sitemap: https://izopresto.ro/sitemap.xml
