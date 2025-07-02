@@ -17,7 +17,6 @@ const nextConfig = {
   },
   experimental: {
     // Optimizează CSS pentru a elimina CSS blocant
-    optimizeCss: true,
   },
 };
 
