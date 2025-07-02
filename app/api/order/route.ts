@@ -4,12 +4,41 @@ import nodemailer from "nodemailer"
 
 export async function POST(request: Request) {
   console.log("🚀 [API] POST /api/order called")
+
+  const order = await request.json()
+
+  const recaptchaToken = order.recaptchaToken
+  if (!recaptchaToken) {
+    return NextResponse.json({ success: false, error: "Missing reCAPTCHA token" }, { status: 400 })
+  }
+
+  // Verificare reCAPTCHA cu Google
+  const secret = process.env.RECAPTCHA_SECRET_KEY
+  if (!secret) {
+    console.error("❌ Missing RECAPTCHA_SECRET_KEY env variable")
+    return NextResponse.json({ success: false, error: "Server configuration error" }, { status: 500 })
+  }
+
+  try {
+    const verifyRes = await fetch(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${recaptchaToken}`,
+      { method: "POST" }
+    )
+    const verifyJson = await verifyRes.json()
+    if (!verifyJson.success) {
+      console.error("❌ reCAPTCHA verification failed:", verifyJson)
+      return NextResponse.json({ success: false, error: "reCAPTCHA verification failed" }, { status: 400 })
+    }
+  } catch (error) {
+    console.error("❌ Error verifying reCAPTCHA:", error)
+    return NextResponse.json({ success: false, error: "reCAPTCHA verification error" }, { status: 500 })
+  }
+
+  // După ce reCAPTCHA e validat, continuăm cu SMTP și trimitere email
   console.log("SMTP_HOST:", process.env.SMTP_HOST)
   console.log("SMTP_PORT:", process.env.SMTP_PORT)
   console.log("SMTP_USER:", process.env.SMTP_USER)
   console.log("EMAIL_TO:", process.env.EMAIL_TO)
-
-  const order = await request.json()
 
   // SMTP setup
   const transporter = nodemailer.createTransport({

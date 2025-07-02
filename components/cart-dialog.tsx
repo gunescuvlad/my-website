@@ -27,7 +27,7 @@ export function CartDialog({ open, onOpenChange, onCheckout }: CartDialogProps) 
     dispatch({ type: "REMOVE_ITEM", payload: { productId } })
   }
 
-  const deliveryFee = state.total >= 500 ? 0 : 50
+  const deliveryFee = state.total >= 2000 ? 0 : 300
   const finalTotal = state.total + deliveryFee
 
   return (
@@ -113,9 +113,9 @@ export function CartDialog({ open, onOpenChange, onCheckout }: CartDialogProps) 
                   {deliveryFee === 0 ? "GRATUITĂ" : `${deliveryFee.toFixed(2)} RON`}
                 </span>
               </div>
-              {state.total < 500 && (
+              {state.total < 2000 && (
                 <p className="text-xs text-gray-500">
-                  Adăugați încă {(500 - state.total).toFixed(2)} RON pentru livrare gratuită
+                  Adăugați încă {(2000 - state.total).toFixed(2)} RON pentru livrare gratuită
                 </p>
               )}
               <div className="flex justify-between font-bold text-lg border-t pt-2">

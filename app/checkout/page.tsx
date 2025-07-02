@@ -1,8 +1,8 @@
 "use client"
 
-import type React from "react"
 
-import { useState } from "react"
+
+import React, { useState, useRef } from "react"
 import { useCart } from "@/lib/context/cart-context"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -12,6 +12,7 @@ import { Separator } from "@/components/ui/separator"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft, CreditCard, Truck, MapPin } from "lucide-react"
+import ReCAPTCHA from "react-google-recaptcha"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -31,6 +32,9 @@ export default function CheckoutPage() {
     notes: "",
   })
 
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null)
+  const recaptchaRef = useRef<any>(null) // <--- aici definim ref cu tip any
+
   const deliveryFee = state.total >= 500 ? 0 : 50
   const finalTotal = state.total + deliveryFee
 
@@ -44,6 +48,11 @@ export default function CheckoutPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
+    if (!recaptchaToken) {
+      alert("Vă rugăm să confirmați că nu sunteți robot.")
+      return
+    }
+
     const orderData = {
       customerName: `${formData.firstName} ${formData.lastName}`,
       customerEmail: formData.email,
@@ -55,6 +64,7 @@ export default function CheckoutPage() {
         price: item.product.price,
       })),
       total: finalTotal,
+      recaptchaToken,
     }
 
     try {
@@ -68,8 +78,11 @@ export default function CheckoutPage() {
 
       if (response.ok && result.success) {
         alert("✅ Detaliile comenzii au fost plasate.\nVeți fi contactați de către echipa noastră în curând!")
-
         dispatch({ type: "CLEAR_CART" })
+
+        // Resetăm ReCAPTCHA fără eroare TS
+        recaptchaRef.current?.reset()
+        setRecaptchaToken(null)
       } else {
         alert("❌ Eroare la trimiterea comenzii: " + result.error)
         console.error("Eroare API:", result)
@@ -108,12 +121,11 @@ export default function CheckoutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           <form onSubmit={handleSubmit} className="space-y-8">
+            {/* Contact Info */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
-                    1
-                  </div>
+                  <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
                   <span>Informații de Contact</span>
                 </CardTitle>
               </CardHeader>
@@ -139,12 +151,11 @@ export default function CheckoutPage() {
               </CardContent>
             </Card>
 
+            {/* Delivery Info */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
-                    2
-                  </div>
+                  <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
                   <span>Informații de Livrare</span>
                 </CardTitle>
               </CardHeader>
@@ -200,12 +211,11 @@ export default function CheckoutPage() {
               </CardContent>
             </Card>
 
+            {/* Payment Info */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
-                    3
-                  </div>
+                  <div className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
                   <span>Metodă de Plată</span>
                 </CardTitle>
               </CardHeader>
@@ -239,6 +249,7 @@ export default function CheckoutPage() {
               </CardContent>
             </Card>
 
+            {/* Additional Notes */}
             <Card>
               <CardHeader>
                 <CardTitle>Observații Suplimentare</CardTitle>
@@ -254,7 +265,20 @@ export default function CheckoutPage() {
               </CardContent>
             </Card>
 
-            <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-3">
+            {/* reCAPTCHA */}
+            <div className="flex justify-center mt-4">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                onChange={(token) => setRecaptchaToken(token)}
+              />
+            </div>
+
+            <Button
+              type="submit"
+              className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-3"
+              disabled={!recaptchaToken}
+            >
               Plasează Comanda
             </Button>
           </form>
