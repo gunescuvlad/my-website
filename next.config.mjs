@@ -7,8 +7,18 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    // Listează aici domeniile de unde servești imagini
+    domains: [
+      'izopresto.ro',
+      // adaugă alte domenii CDN dacă folosești
+    ],
+    // Formate moderne pe care Next.js le va genera automat
+    formats: ['image/avif', 'image/webp'],
   },
-}
+  experimental: {
+    // Optimizează CSS pentru a elimina CSS blocant
+    optimizeCss: true,
+  },
+};
 
-export default nextConfig
+export default nextConfig;

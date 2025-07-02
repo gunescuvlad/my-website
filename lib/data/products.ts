@@ -201,7 +201,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton OB37 Ф6, colac",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.5,
+    price: "request",
     unit: "kg",
     description: "Oțel beton OB37 cu diametrul de 6mm, în colac, pentru armarea structurilor de beton.",
     specifications: {
@@ -222,7 +222,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton OB37 Ф8, colac",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.45,
+    price: "request",
     unit: "kg",
     description: "Oțel beton OB37 cu diametrul de 8mm, în colac.",
     specifications: {
@@ -240,7 +240,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф8, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.8,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 8mm, în bara.",
     specifications: {
@@ -258,7 +258,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф10, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.75,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 10mm, în bara.",
     specifications: {
@@ -276,7 +276,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф12, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.7,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 12mm, în bara.",
     specifications: {
@@ -294,7 +294,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф14, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.65,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 14mm, în bara.",
     specifications: {
@@ -312,7 +312,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф16, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.6,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 16mm, în bara.",
     specifications: {
@@ -330,7 +330,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф18, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.55,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 18mm, în bara.",
     specifications: {
@@ -348,7 +348,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф20, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.5,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 20mm, în bara.",
     specifications: {
@@ -366,7 +366,7 @@ const fierBetonProducts: Product[] = [
     name: "Otel beton BST500C Ф22, bara",
     category: "metale",
     subcategory: "fier-beton",
-    price: 4.45,
+    price: "request",
     unit: "kg",
     description: "Oțel beton BST500C cu diametrul de 22mm, în bara.",
     specifications: {
@@ -484,7 +484,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 599x50x199mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 3.2,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 599x50x199mm.",
     specifications: {
@@ -504,7 +504,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 599x100x199mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 6.4,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 599x100x199mm.",
     specifications: {
@@ -522,7 +522,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 599x150x199mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 9.6,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 599x150x199mm.",
     specifications: {
@@ -540,7 +540,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 599x200x199mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 12.8,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 599x200x199mm.",
     specifications: {
@@ -558,7 +558,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 600x250x200mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 16.0,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 600x250x200mm.",
     specifications: {
@@ -576,7 +576,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 599x300x199mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 19.2,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 599x300x199mm.",
     specifications: {
@@ -594,7 +594,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 600x300x250mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 23.36,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 600x300x250mm.",
     specifications: {
@@ -613,7 +613,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 600x200x250mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 23.36,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 600x200x250mm.",
     specifications: {
@@ -632,7 +632,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 600x150x250mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 23.36,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 600x150x250mm.",
     specifications: {
@@ -651,7 +651,7 @@ const bcaProducts: Product[] = [
     name: "BCA Ytong 599x75x199mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 23.36,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular autoclavizat Ytong, dimensiuni 599x75x199mm.",
     specifications: {
@@ -670,7 +670,7 @@ const bcaProducts: Product[] = [
     name: "BCA Izopor Elpreco 650x125x200mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 7.8,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular Izopor Elpreco, dimensiuni 650x125x200mm.",
     specifications: {
@@ -688,7 +688,7 @@ const bcaProducts: Product[] = [
     name: "BCA Izopor Elpreco 650x150x200mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 9.36,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular Izopor Elpreco, dimensiuni 650x150x200mm.",
     specifications: {
@@ -705,7 +705,7 @@ const bcaProducts: Product[] = [
     name: "BCA Izopor Elpreco 650x100x200mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 12.48,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular Izopor Elpreco, dimensiuni 650x100x200mm.",
     specifications: {
@@ -722,7 +722,7 @@ const bcaProducts: Product[] = [
     name: "BCA Izopor Elpreco 650x250x200mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 15.6,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular Izopor Elpreco, dimensiuni 650x250x200mm.",
     specifications: {
@@ -739,7 +739,7 @@ const bcaProducts: Product[] = [
     name: "BCA Izopor Elpreco 650x300x200mm",
     category: "zidarie",
     subcategory: "bca",
-    price: 18.72,
+    price: "request",
     unit: "buc",
     description: "Bloc din beton celular Izopor Elpreco, dimensiuni 650x300x200mm.",
     specifications: {
@@ -839,7 +839,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 30 STh, 250x300x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 4.85,
+    price: "request",
     unit: "buc",
     description: "Cărămidă Porotherm 30 STh cu sistem de îmbinare pe orizontală.",
     specifications: {
@@ -859,7 +859,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 38 Robust, 250x380x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 6.2,
+    price: "request",
     unit: "buc",
     description: "Cărămidă Porotherm 38 Robust pentru pereți portanți.",
     specifications: {
@@ -878,7 +878,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Kebe 300x240x250mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 5.4,
+    price: "request",
     unit: "buc",
     description: "Cărămidă Kebe pentru construcții rezidențiale.",
     specifications: {
@@ -895,7 +895,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 25/30 Eco, 250x300x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 4.2,
+    price: "request",
     unit: "buc",
     description: "Cărămidă Porotherm 25/30 Eco cu proprietăți acustice îmbunătățite.",
     specifications: {
@@ -913,7 +913,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 20 N+F, 500x200x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 7.8,
+    price: "request",
     unit: "buc",
     description: "Caramida Porotherm 20 N+F este un bloc ceramic cu nut si feder destinat executiei peretilor nestructurali de compartimentare din zidarie cu protectie impotriva penetrarii apei.",
     specifications: {
@@ -931,7 +931,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 25 N+F, 375x250x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 9.5,
+    price: "request",
     unit: "buc",
     description: "Caramida Porotherm 25 N+F este un bloc ceramic cu nut si feder care este destinat executiei peretilor nestructurali de inchidere si de compartimentare din zidarie cu protectie impotriva penetrarii apei.",
     specifications: {
@@ -949,7 +949,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 15 N+F, 500x150x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 1.8,
+    price: "request",
     unit: "buc",
     description: "Caramida Porotherm 15 N+F este un bloc ceramic cu nut si feder destinat executiei peretilor nestructurali de compartimentare din zidarie cu protectie impotriva penetrarii apei. Porotherm 15 N+F ofera cel mai bun randament in executie a zidariei cu un necesar de 8 buc/mp de perete si fara mortar in rostul vertical.",
     specifications: {
@@ -967,7 +967,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Kebe , 120x240x380mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 2.3,
+    price: "request",
     unit: "buc",
     description: "Caramida Kebe 120x240x380mm.Produsul se afla in stoc!",
     specifications: {
@@ -985,7 +985,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 30 Robust, 250x300x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 3.6,
+    price: "request",
     unit: "buc",
     description: "Caramida Porotherm 30 Robust este un bloc ceramic cu locas de mortar destinat executiei peretilor structurali sau nestructurali din zidarie – cu protectie impotriva penetrarii apei.",
     specifications: {
@@ -1003,7 +1003,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Kebe 200x240x380mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 0.85,
+    price: "request",
     unit: "buc",
     description: "Cărămidă Kebe. Stoc Disponibil!",
     specifications: {
@@ -1020,7 +1020,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Kebe 250x240x380mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 2.1,
+    price: "request",
     unit: "buc",
     description: "Caramida Kebe. Stoc Disponibil!",
     specifications: {
@@ -1037,7 +1037,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 38 STh 250x380x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 1.95,
+    price: "request",
     unit: "buc",
     description: "Porotherm 38 STh beneficiaza de o configuratie speciala a peretilor ceramici ce asigura un traseu elaborat al fluxului de caldura – conferind produsului o performanta termica foarte buna.",
     specifications: {
@@ -1056,7 +1056,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 11,5 N+F, 500x115x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 1.2,
+    price: "request",
     unit: "buc",
     description: "Porotherm 11.5 N+F ofera cel mai bun randament in executie a zidariei cu un necesar de 8 buc/mp de perete si fara mortar in rostul vertical.",
     specifications: {
@@ -1075,7 +1075,7 @@ const caramidaProducts: Product[] = [
     name: "Caramida Porotherm 25 Robust, 375x250x238mm",
     category: "zidarie",
     subcategory: "caramida",
-    price: 1.2,
+    price: "request",
     unit: "buc",
     description: "Caramida Porotherm 25 Robust este un bloc ceramic cu locas de mortar destinat executiei peretilor structurali sau nestructurali – din zidarie cu protectie impotriva penetrarii apei.",
     specifications: {
@@ -1097,7 +1097,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete interior/exterior Ceresit CT 17 10L",
     category: "lianti",
     subcategory: "amorse",
-    price: 45.9,
+    price: "request",
     unit: "buc",
     description: "Amorsă concentrată pentru pereți interiori și exteriori Ceresit CT 17.",
     specifications: {
@@ -1118,7 +1118,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete interior/exterior Innenweiss 10L",
     category: "lianti",
     subcategory: "amorse",
-    price: 38.5,
+    price: "request",
     unit: "buc",
     description: "Amorsă pentru pereți interiori și exteriori Innenweiss, 10 litri.",
     specifications: {
@@ -1136,7 +1136,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa pentru betoane si mortare Adeplast Betoncontact 22kg",
     category: "lianti",
     subcategory: "amorse",
-    price: 78.5,
+    price: "request",
     unit: "sac",
     description: "Amorsă pentru betoane și mortare Adeplast Betoncontact, 22kg.",
     specifications: {
@@ -1154,7 +1154,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete interior/exterior Oskar Zero Mucegai 4L",
     category: "lianti",
     subcategory: "amorse",
-    price: 52.3,
+    price: "request",
     unit: "buc",
     description: "Amorsa perete rezistenta la mucegai.",
     specifications: {
@@ -1171,7 +1171,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa bituminoasa Apla Hydrostop 10kg",
     category: "lianti",
     subcategory: "amorse",
-    price: 48.9,
+    price: "request",
     unit: "buc",
     description: "Amorsa bituminoasa pe baza de apa, compus bituminos ”la rece” pe baza de bitum emulsionat in apa, copolimeri sintetici, stabilizatori minerali, aditivi specifici etc.",
     specifications: {
@@ -1188,7 +1188,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa penetranta pentru sape si betoane Ceresit R 777 10kg",
     category: "lianti",
     subcategory: "amorse",
-    price: 55.7,
+    price: "request",
     unit: "buc",
     description: "Amorsa penetranta Ceresit R 777 pentru suporturi absorbante cum ar fi: betoane si sape. Aceasta amorsa reduce porozitatea, fiind recomandata pentru pretratarea suprafetelor absorbante si pentru incalzirea in pardoseala, unde nu se depaseste temperatura de 50°C.",
     specifications: {
@@ -1205,7 +1205,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa bituminoasa Apla Hydrostop 18kg",
     category: "lianti",
     subcategory: "amorse",
-    price: 42.8,
+    price: "request",
     unit: "buc",
     description: "Amorsa bituminoasa pe baza de apa, compus bituminos ”la rece” pe baza de bitum emulsionat in apa, copolimeri sintetici, stabilizatori minerali, aditivi specifici etc. AplaHydroStop asigura o aderenta buna pe orice suport mineral uscat, realizeaza o pelicula hidroizolanta rezistenta, atat pe suporturi orizontale cat si verticale.",
     specifications: {
@@ -1222,7 +1222,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete Ceresit CT 19 Beton Contact 24kg",
     category: "lianti",
     subcategory: "amorse",
-    price: 89.5,
+    price: "request",
     unit: "buc",
     description: "Grund de contact Ceresit CT 19 utilizat pentru amorsarea suprafetelor minerale, de interior si exterior. Betonul de contact de la Ceresit CT 19 este recomandat pentru pregatirea suportului inainte de aplicarea sapelor, tencuielilor, etc.",
     specifications: {
@@ -1240,7 +1240,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete Ceresit CT 19 Beton Contact 7,5kg",
     category: "lianti",
     subcategory: "amorse",
-    price: 46.2,
+    price: "request",
     unit: "buc",
     description: "Grund de contact Ceresit CT 19 utilizat pentru amorsarea suprafetelor minerale, de interior si exterior. Betonul de contact de la Ceresit CT 19 este recomandat pentru pregatirea suportului inainte de aplicarea sapelor, tencuielilor, etc.",
     specifications: {
@@ -1258,7 +1258,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete interior/exterior Danke 10L",
     category: "lianti",
     subcategory: "amorse",
-    price: 41.5,
+    price: "request",
     unit: "buc",
     description: "Amorsa pentru pereti de interior si exterior, grund de amorsare pentru pereti pe baza acrilica.",
     specifications: {
@@ -1275,7 +1275,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete interior/exterior Ceresit CT 16",
     category: "lianti",
     subcategory: "amorse",
-    price: 58.9,
+    price: "request",
     unit: "buc",
     description: "Vopsea alba grund pentru sistemul de termoizolatie, amorsarea suprafetelor inainte de aplicarea tencuielilor decorative, aceasta este recomandata pentru imbunatatirea aderentei tencuielilor.",
     specifications: {
@@ -1292,7 +1292,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete interior/exterior Ceresit CT 17 2L",
     category: "lianti",
     subcategory: "amorse",
-    price: 45.9,
+    price: "request",
     unit: "buc",
     description: "Amorsă concentrată pentru pereți interiori și exteriori Ceresit CT 17.",
     specifications: {
@@ -1312,7 +1312,7 @@ const amorseProducts: Product[] = [
     name: "Amorsa perete interior/exterior Ceresit CT 7 5L",
     category: "lianti",
     subcategory: "amorse",
-    price: 45.9,
+    price: "request",
     unit: "buc",
     description: "Grund universal pentru amorsarea suprafetelor absorbante inainte de: montarea placilor ceramice, a placilor termoizolante sau a acoperirilor cu glet, vopsea lavabila.",
     specifications: {
@@ -1336,7 +1336,7 @@ const cimentProducts: Product[] = [
     name: "Beton predozat universal Baumit Beton 25kg",
     category: "lianti",
     subcategory: "ciment",
-    price: 32.5,
+    price: "request",
     unit: "sac",
     description: "Beton predozat universal Baumit, 25kg.",
     specifications: {
@@ -1354,7 +1354,7 @@ const cimentProducts: Product[] = [
     name: "Ciment Romcim Durabil 40kg",
     category: "lianti",
     subcategory: "ciment",
-    price: 28.9,
+    price: "request",
     unit: "sac",
     description: "Ciment Romcim Durabil, 40kg.",
     specifications: {
@@ -1373,7 +1373,7 @@ const cimentProducts: Product[] = [
     name: "Ciment Romcim Ultra 40kg",
     category: "lianti",
     subcategory: "ciment",
-    price: 31.2,
+    price: "request",
     unit: "sac",
     description: "Ciment Romcim Ultra, 40kg.",
     specifications: {

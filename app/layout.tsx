@@ -2,28 +2,61 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CartProvider } from "@/lib/context/cart-context"
 import Link from "next/link"
-import WhatsappPrompt from "@/components/WhatsappPrompt"  // import aliniat cu numele fișierului
+import WhatsappPrompt from "@/components/WhatsappPrompt"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "IzoPresto - Materiale de Construcții | București",
+  title: "IzoPresto – Materiale de Construcții de Top în București",
   description:
-    "Furnizor de materiale de construcții de calitate în București. Peste 500 de produse disponibile cu livrare rapidă. Metale, BCA, ciment, adezivi și multe altele.",
-  keywords:
-    "materiale constructii, bucuresti, bca, fier beton, ciment, adezivi, gips carton, livrare rapida",
+    "Izopresto furnizează materiale de construcții premium în București: BCA, fier beton, ciment, adezivi și multe altele, cu livrare rapidă.",
+  keywords: [
+    "materiale construcții",
+    "București",
+    "BCA",
+    "fier beton",
+    "ciment",
+    "adezivi",
+    "livrare rapidă"
+  ],
   generator: "v0.dev",
-   icons: {
-  icon: "/favicon.ico",        // browser favicon
-   shortcut: "/favicon.ico",    // fallback
-   apple: "/favicon.png",       // apple touch icon, dacă ai
- },
-  }
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    url: "https://izopresto.ro",
+    title: "IzoPresto – Materiale de Construcții de Top în București",
+    description:
+      "Izopresto furnizează materiale de construcții premium în București: BCA, fier beton, ciment, adezivi și multe altele, cu livrare rapidă.",
+    siteName: "IzoPresto",
+    images: [
+      {
+        url: "https://izopresto.ro/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "IzoPresto – materiale construcții București",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@IzoprestoRO",
+    title: "IzoPresto – Materiale de Construcții de Top în București",
+    description:
+      "Izopresto furnizează materiale de construcții premium în București: BCA, fier beton, ciment, adezivi și multe altele.",
+    images: ["https://izopresto.ro/og-image.jpg"],
+  },
+}
 
 export default function RootLayout({
   children,
@@ -33,6 +66,19 @@ export default function RootLayout({
   return (
     <html lang="ro">
       <body className={inter.className}>
+        {/* Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXX', { page_path: window.location.pathname });
+          `}
+        </Script>
+
         <CartProvider>
           <Header />
           {children}
