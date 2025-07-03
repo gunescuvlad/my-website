@@ -10,8 +10,8 @@ export interface Product {
   specifications: Record<string, string>
   images: string[]
   inStock: boolean
-  rating: number
-  reviews: number
+ // rating: number
+  // reviews: number
   badge?: "bestseller" | "new" | "offer"
 }
 
@@ -213,8 +213,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-colac.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 23,
     badge: "bestseller",
   },
   {
@@ -232,8 +230,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-colac.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 18,
   },
   {
     id: "otel-beton-bst500c-8-bara",
@@ -250,8 +246,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.7,
-    reviews: 31,
   },
   {
     id: "otel-beton-bst500c-10-bara",
@@ -268,8 +262,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.5,
-    reviews: 27,
   },
   {
     id: "otel-beton-bst500c-12-bara",
@@ -286,8 +278,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.6,
-    reviews: 22,
   },
   {
     id: "otel-beton-bst500c-14-bara",
@@ -304,8 +294,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.4,
-    reviews: 19,
   },
   {
     id: "otel-beton-bst500c-16-bara",
@@ -322,8 +310,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.7,
-    reviews: 25,
   },
   {
     id: "otel-beton-bst500c-18-bara",
@@ -340,8 +326,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.5,
-    reviews: 16,
   },
   {
     id: "otel-beton-bst500c-20-bara",
@@ -358,8 +342,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.6,
-    reviews: 21,
   },
   {
     id: "otel-beton-bst500c-22-bara",
@@ -376,8 +358,6 @@ const fierBetonProducts: Product[] = [
     },
     images: ["/images/otel-beton-bara.jpg"],
     inStock: true,
-    rating: 4.4,
-    reviews: 14,
   },
   
 ]
@@ -400,8 +380,6 @@ const fierBetonFasonatProducts: Product[] = [
     },
     images: ["/images/otel-beton-fasonat.jpg"],
     inStock: true,
-    rating: 4.8,
-    reviews: 12,
   },
   {
     id: "otel-beton-fasonat-bst500c-10",
@@ -418,8 +396,6 @@ const fierBetonFasonatProducts: Product[] = [
     },
     images: ["/images/otel-beton-fasonat.jpg"],
     inStock: true,
-    rating: 4.7,
-    reviews: 9,
   },
   {
     id: "otel-beton-fasonat-bst500c-12",
@@ -436,8 +412,6 @@ const fierBetonFasonatProducts: Product[] = [
     },
     images: ["/images/otel-beton-fasonat.jpg"],
     inStock: true,
-    rating: 4.6,
-    reviews: 15,
   },
   {
     id: "otel-beton-fasonat-bst500c-14",
@@ -454,8 +428,6 @@ const fierBetonFasonatProducts: Product[] = [
     },
     images: ["/images/otel-beton-fasonat.jpg"],
     inStock: true,
-    rating: 4.5,
-    reviews: 11,
   },
   {
     id: "otel-beton-fasonat-bst500c-16",
@@ -472,8 +444,6 @@ const fierBetonFasonatProducts: Product[] = [
     },
     images: ["/images/otel-beton-fasonat.jpg"],
     inStock: true,
-    rating: 4.7,
-    reviews: 8,
   },
 ]
 
@@ -495,9 +465,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 34,
-    badge: "bestseller",
   },
   {
     id: "bca-ytong-599x100x199",
@@ -514,8 +481,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 42,
   },
   {
     id: "bca-ytong-599x150x199",
@@ -532,8 +497,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 28,
   },
   {
     id: "bca-ytong-599x200x199",
@@ -550,8 +513,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.8,
-    reviews: 56,
   },
   {
     id: "bca-ytong-600x250x200",
@@ -568,8 +529,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 31,
   },
   {
     id: "bca-ytong-599x300x199",
@@ -586,8 +545,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 45,
   },
   {
     id: "bca-ytong-600x300x250",
@@ -604,8 +561,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 22,
   },
 
 {
@@ -623,8 +578,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 22,
   },
 
   {
@@ -642,8 +595,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 22,
   },
 
   {
@@ -661,8 +612,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/bca.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 22,
   },
 
   {
@@ -680,8 +629,7 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/elpreco.webp"],
     inStock: true,
-    rating: 4.4,
-    reviews: 18,
+    badge: "bestseller",
   },
   {
     id: "bca-izopor-elpreco-650x150x200",
@@ -697,8 +645,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/elpreco.webp"],
     inStock: true,
-    rating: 4.3,
-    reviews: 15,
   },
   {
     id: "bca-izopor-elpreco-650x100x200",
@@ -714,8 +660,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/elpreco.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 27,
   },
   {
     id: "bca-izopor-elpreco-650x250x200",
@@ -731,8 +675,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/elpreco.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 33,
   },
   {
     id: "bca-izopor-elpreco-650x300x200",
@@ -748,8 +690,6 @@ const bcaProducts: Product[] = [
     },
     images: ["/images/elpreco.webp"],
     inStock: true,
-    rating: 4.4,
-    reviews: 19,
   },
   
 ]
@@ -767,8 +707,6 @@ const decobitProducts: Product[] = [
     specifications: {},
     images: ["/images/carton-bituminos.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "carton-bituminos-20m",
@@ -781,22 +719,20 @@ const decobitProducts: Product[] = [
     specifications: {},
     images: ["/images/carton-bituminos.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 ]
 
 // ————————— Gama Profesional —————————
 const gamaProfesionalProducts: Product[] = [
-  { id: "arco-forato-v-0-85",          name: "ARCO Forato V 0.85",         category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/Forato.jpg"], inStock:true, rating:0, reviews:0 },
-  { id: "arco-thermo-ad-v-2mm",       name: "Arco Thermo AD V 2mm",       category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/thermo.jpg"], inStock:true, rating:0, reviews:0 },
-  { id: "arco-antiroot-plasto-p-3mm", name: "ARCO Antiroot Plasto P 3mm", category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/Plasto.jpg"], inStock:true, rating:0, reviews:0 },
-  { id: "arcotherm-dx2",             name: "Arcotherm DX2",             category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/therm.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "arco-forato-v-0-85",          name: "ARCO Forato V 0.85",         category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/Forato.jpg"], inStock:true},
+  { id: "arco-thermo-ad-v-2mm",       name: "Arco Thermo AD V 2mm",       category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/thermo.jpg"], inStock:true},
+  { id: "arco-antiroot-plasto-p-3mm", name: "ARCO Antiroot Plasto P 3mm", category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/Plasto.jpg"], inStock:true},
+  { id: "arcotherm-dx2",             name: "Arcotherm DX2",             category: "hidroizolatii", subcategory: "gama-profesional", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/therm.jpg"], inStock:true},
 ]
 
 // ————————— Gama Standard —————————
 const gamaStandardProducts: Product[] = [
-  { id: "novatec-pa-4-5", name: "Novatec PA 4.5", category: "hidroizolatii", subcategory: "gama-standard", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/novatec.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "novatec-pa-4-5", name: "Novatec PA 4.5", category: "hidroizolatii", subcategory: "gama-standard", price: "request", unit: "mp", description:"", specifications:{}, images:["/images/novatec.jpg"], inStock:true},
 ]
 
 // ————————— Gama Festa —————————
@@ -813,22 +749,21 @@ const gamaFestaProducts: Product[] = [
   specifications: {},
   images: ["/images/plus.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
+  badge: "bestseller",
 }));
 
 // ————————— Amorse și Masticuri —————————
 const amorseMasticuriProducts: Product[] = [
-  { id: "elastobit-20kg",       name: "Elastobit (20kg)",       category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/images/elastobit.jpg"], inStock:true, rating:0, reviews:0 },
-  { id: "superbit-25kg",        name: "Superbit (25kg)",        category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/images/superbit.jpg"], inStock:true, rating:0, reviews:0 },
-  { id: "izobituprimer-20l",    name: "Amorsa Bituminoasă IzoBituprimer 20L (Solvent)", category: "hidroizolatii", subcategory: "amorse-masticuri", price:"request", unit:"buc", description:"", specifications:{}, images:["/images/izobit.jpg"], inStock:true, rating:0, reviews:0 },
+  { id: "elastobit-20kg",       name: "Elastobit (20kg)",       category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/images/elastobit.jpg"], inStock:true},
+  { id: "superbit-25kg",        name: "Superbit (25kg)",        category: "hidroizolatii", subcategory: "amorse-masticuri", price: "request", unit:"buc", description:"", specifications:{}, images:["/images/superbit.jpg"], inStock:true},
+  { id: "izobituprimer-20l",    name: "Amorsa Bituminoasă IzoBituprimer 20L (Solvent)", category: "hidroizolatii", subcategory: "amorse-masticuri", price:"request", unit:"buc", description:"", specifications:{}, images:["/images/izobit.jpg"], inStock:true},
 ]
 
 // ————————— Membrană Cramponată —————————
 const membranaCramponataProducts: Product[] = [
-  { id: "membrana-cramponata-1x20m",   name: "Membrană cramponată 1 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true, rating:0, reviews:0 },
-  { id: "membrana-cramponata-1-5x20m", name: "Membrană cramponată 1.5 x 20 m", category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true, rating:0, reviews:0 },
-  { id: "membrana-cramponata-2x20m",   name: "Membrană cramponată 2 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true, rating:0, reviews:0 },
+  { id: "membrana-cramponata-1x20m",   name: "Membrană cramponată 1 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true},
+  { id: "membrana-cramponata-1-5x20m", name: "Membrană cramponată 1.5 x 20 m", category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true},
+  { id: "membrana-cramponata-2x20m",   name: "Membrană cramponată 2 x 20 m",   category:"hidroizolatii", subcategory:"membrana-cramponata", price:"request", unit:"rola", description:"", specifications:{}, images:["/images/membrana.webp"], inStock:true},
 ]
 
 
@@ -850,9 +785,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida1.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 56,
-    badge: "bestseller",
   },
   {
     id: "caramida-porotherm-38-robust",
@@ -870,8 +802,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida2.webp"],
     inStock: true,
-    rating: 4.8,
-    reviews: 43,
   },
   {
     id: "caramida-kebe-300x240x250",
@@ -887,8 +817,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida3.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 32,
   },
   {
     id: "caramida-porotherm-25-30-Eco",
@@ -905,8 +833,7 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida4.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 29,
+    badge: "bestseller",
   },
   {
     id: "caramida-porotherm-20-NF",
@@ -923,8 +850,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida5.webp"],
     inStock: true,
-    rating: 4.9,
-    reviews: 67,
   },
   {
     id: "caramida-porotherm-25-NF",
@@ -941,8 +866,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida6.webp"],
     inStock: true,
-    rating: 4.8,
-    reviews: 54,
   },
   {
     id: "caramida-porotherm-15-NF",
@@ -959,8 +882,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida7.webp"],
     inStock: true,
-    rating: 4.4,
-    reviews: 23,
   },
   {
     id: "caramida-kebe",
@@ -977,8 +898,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida8.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 31,
   },
   {
     id: "caramida-porotherm-30-robust",
@@ -995,8 +914,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida9.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 38,
   },
   {
     id: "caramida-kebe-200x240x380",
@@ -1012,8 +929,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida10.webp"],
     inStock: true,
-    rating: 4.3,
-    reviews: 45,
   },
   {
     id: "caramida-kebe-250x240x380",
@@ -1029,8 +944,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida11.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 52,
   },
   {
     id: "caramida-porotherm-38-sth",
@@ -1048,8 +961,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida12.webp"],
     inStock: true,
-    rating: 4.8,
-    reviews: 61,
   },
   {
     id: "caramida-porotherm-115-nf",
@@ -1066,8 +977,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida13.webp"],
     inStock: true,
-    rating: 4.4,
-    reviews: 34,
   },
 
   {
@@ -1085,8 +994,6 @@ const caramidaProducts: Product[] = [
     },
     images: ["/images/caramida14.webp"],
     inStock: true,
-    rating: 4.4,
-    reviews: 34,
   },
 ]
 
@@ -1109,8 +1016,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/ct17.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 124,
     badge: "bestseller",
   },
   {
@@ -1128,8 +1033,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa2.webp"],
     inStock: true,
-    rating: 4.4,
-    reviews: 28,
   },
   {
     id: "amorsa-adeplast-betoncontact-22kg",
@@ -1146,8 +1049,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa3.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 35,
   },
   {
     id: "amorsa-oskar-4l",
@@ -1163,8 +1064,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa4.webp"],
     inStock: true,
-    rating: 4.8,
-    reviews: 67,
   },
   {
     id: "amorsa-apla-10kg",
@@ -1180,8 +1079,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa5.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 43,
   },
   {
     id: "amorsa-ceresit-10kg",
@@ -1197,8 +1094,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa6.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 52,
   },
   {
     id: "amorsa-apla-18kg",
@@ -1214,8 +1109,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa7.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 38,
   },
   {
     id: "amorsa-ceresit-ct-19-contact-24kg",
@@ -1232,8 +1125,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa8.webp"],
     inStock: true,
-    rating: 4.9,
-    reviews: 71,
   },
   {
     id: "amorsa-ceresit-ct-19-contact-75kg",
@@ -1250,8 +1141,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa8.webp"],
     inStock: true,
-    rating: 4.4,
-    reviews: 29,
   },
   {
     id: "amorsa-danke-10l",
@@ -1267,8 +1156,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa10.webp"],
     inStock: true,
-    rating: 4.3,
-    reviews: 22,
   },
   {
     id: "amorsa-ceresit-16",
@@ -1284,8 +1171,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa11.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 45,
   },
  {
     id: "amorsa-ceresit-ct17-2l",
@@ -1303,8 +1188,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/ct17.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 124,
     badge: "bestseller",
   },
   {
@@ -1323,9 +1206,6 @@ const amorseProducts: Product[] = [
     },
     images: ["/images/amorsa12.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 124,
-    badge: "bestseller",
   },
 ]
 
@@ -1346,8 +1226,6 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/ciment1.webp"],
     inStock: true,
-    rating: 4.5,
-    reviews: 67,
   },
   {
     id: "ciment-romcim-durabil-40kg",
@@ -1364,8 +1242,6 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/ciment2.webp"],
     inStock: true,
-    rating: 4.7,
-    reviews: 89,
     badge: "bestseller",
   },
   {
@@ -1383,8 +1259,6 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/ciment3.webp"],
     inStock: true,
-    rating: 4.6,
-    reviews: 72,
   },
 ]
 
@@ -1405,8 +1279,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-ceresit-ct127-5kg",
@@ -1423,8 +1296,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "ipsos-constructii-rigips-construct-gips-25kg",
@@ -1441,8 +1313,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-ceresit-ct126-20kg",
@@ -1459,8 +1330,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "ipsos-modelaj-rigips-model-gips-25kg",
@@ -1477,8 +1347,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-ceresit-ct126-5kg",
@@ -1495,8 +1364,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "ipsos-modelaj-rigips-model-gips-5kg",
@@ -1513,8 +1381,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-aplafill-finisaj-20kg",
@@ -1531,8 +1398,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet8.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "ipsos-imbinare-rigips-super-25kg",
@@ -1549,8 +1415,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet9.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-weber-n19-20kg",
@@ -1567,8 +1432,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet10.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "ipsos-imbinare-rigips-super-5kg",
@@ -1585,8 +1449,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet11.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-baumit-finobello-20kg",
@@ -1603,8 +1466,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet12.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-rigips-rimano-uni-25kg",
@@ -1621,8 +1483,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet13.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-baumit-finogrande-20kg",
@@ -1639,8 +1500,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet14.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-meseriasului-gm-20-20kg",
@@ -1657,8 +1517,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet15.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-meseriasului-gm-20-5kg",
@@ -1675,8 +1534,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet15.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-super-top-20kg",
@@ -1693,8 +1551,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet17.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-ceresit-in46-3kg",
@@ -1711,8 +1568,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet18.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-rigips-rimano-ten-25kg",
@@ -1729,8 +1585,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet19.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "glet-ceresit-ct127-20kg",
@@ -1747,8 +1602,7 @@ const cimentProducts: Product[] = [
     },
     images: ["/images/glet20.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -1771,8 +1625,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-manuala-baumit-manu-4-40kg",
@@ -1789,8 +1642,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-adeplast-tinci-alb-25kg",
@@ -1807,8 +1659,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-ceresit-cd25-25kg",
@@ -1826,8 +1677,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-adeplast-mz-5-30kg",
@@ -1844,8 +1694,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar5.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-ceresit-cd26-25kg",
@@ -1863,8 +1712,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-adeplast-klasico-30kg",
@@ -1881,8 +1729,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-ceresit-cd30-25kg",
@@ -1899,8 +1746,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar8.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-adeplast-mti-25-30kg",
@@ -1917,8 +1763,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar9.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-ceresit-cd24-25kg",
@@ -1935,8 +1780,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar10.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-adeplast-mte-35-30kg",
@@ -1953,8 +1797,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar11.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-adeplast-tinci-25kg",
@@ -1971,8 +1814,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar12.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "mortar-baumit-mm50-40kg",
@@ -1989,8 +1831,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar13.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "liant-aditivat-multibat-40kg",
@@ -2007,8 +1848,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar14.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-mecanizata-baumit-mpa-35-40kg",
@@ -2025,8 +1865,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar15.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-exterior-multibat-extratenc-e-t2-30kg",
@@ -2043,8 +1882,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar16.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-ipsos-baumit-ratioglatt-35-30kg",
@@ -2061,8 +1899,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar17.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-interior-multibat-extratenc-i-t1-30kg",
@@ -2079,8 +1916,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar18.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "tencuiala-mecanizata-baumit-mpi-25-40kg",
@@ -2097,8 +1933,7 @@ export const mortareProducts: Product[] = [
     },
     images: ["/images/mortar19.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -2125,8 +1960,6 @@ const adeziviGipsCartonProducts: Product[] = [
     },
     images: ["/images/adeziv1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
     badge: "bestseller",
   },
 ]
@@ -2149,8 +1982,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm11-plus-5kg",
@@ -2168,8 +2000,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-weber-ex25-25kg",
@@ -2187,8 +2018,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm11-plus-275kg",
@@ -2206,8 +2036,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-weber-st10-25kg",
@@ -2225,8 +2054,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm25-25kg",
@@ -2244,8 +2072,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-baumit-flexmarmor-25kg",
@@ -2262,8 +2089,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv8.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm17-5kg",
@@ -2281,8 +2107,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv9.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm16-25kg",
@@ -2300,8 +2125,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv10.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm17-275kg",
@@ -2319,8 +2143,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv11.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm17-25kg",
@@ -2338,8 +2161,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv12.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm12-25kg",
@@ -2356,8 +2178,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv13.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm9-25kg",
@@ -2374,8 +2195,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv14.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm11-plus-alb-25kg",
@@ -2392,8 +2212,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv15.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-multibat-extrafix-f4-25kg",
@@ -2410,8 +2229,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv16.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-cm11-plus-25kg",
@@ -2428,8 +2246,7 @@ export const adeziviGresieFaiantaProducts: Product[] = [
     },
     images: ["/images/adeziv17.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -2452,8 +2269,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-weber-r40-25kg",
@@ -2470,8 +2286,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-adeplast-polistirol-premium-25kg",
@@ -2488,8 +2303,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-adeplast-polistirol-eco-plus-25kg",
@@ -2506,8 +2320,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-baumit-duocontact-25kg",
@@ -2524,8 +2337,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-thermouniversal-25kg",
@@ -2542,8 +2354,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-sikahome-insulate-polystyrene-25kg",
@@ -2560,8 +2371,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-multibat-extratherm-t6-25kg",
@@ -2578,8 +2388,7 @@ export const adeziviPolistirenProducts: Product[] = [
     },
     images: ["/images/polistireni8.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -2601,8 +2410,7 @@ export const adeziviVataMineralaProducts: Product[] = [
     },
     images: ["/images/vata1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-weber-r40-25kg",
@@ -2619,8 +2427,7 @@ export const adeziviVataMineralaProducts: Product[] = [
     },
     images: ["/images/vata2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-isover-profi-fassade-fix-25kg",
@@ -2637,8 +2444,7 @@ export const adeziviVataMineralaProducts: Product[] = [
     },
     images: ["/images/vata3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-baumit-duocontact-25kg",
@@ -2655,8 +2461,7 @@ export const adeziviVataMineralaProducts: Product[] = [
     },
     images: ["/images/vata4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-ceresit-thermouniversal-25kg",
@@ -2673,8 +2478,7 @@ export const adeziviVataMineralaProducts: Product[] = [
     },
     images: ["/images/vata5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -2696,8 +2500,7 @@ export const adeziviZidarieProducts: Product[] = [
     },
     images: ["/images/zidarie1.webp"],      // completează cu calea ta
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-bca-baumit-planofix-5-25kg",
@@ -2714,8 +2517,7 @@ export const adeziviZidarieProducts: Product[] = [
     },
     images: ["/images/zidarie2.webp"],      // completează cu calea ta
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "adeziv-bca-adeplast-optim-dekor-25kg",
@@ -2732,8 +2534,7 @@ export const adeziviZidarieProducts: Product[] = [
     },
     images: ["/images/zidarie3.webp"],      // completează cu calea ta
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -2755,8 +2556,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-etansare-rigips-uw100-vata-bazaltica",
@@ -2773,8 +2573,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-armare-rosturi-hartie-rigips-75m",
@@ -2791,8 +2590,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-colt-hartie-alux-30m",
@@ -2809,8 +2607,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-armare-rosturi-fibra-sticla-rigips",
@@ -2827,8 +2624,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-autoadeziva-gips-carton-rigips-45m",
@@ -2845,8 +2641,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-autoadeziva-gips-carton-rigips-90m",
@@ -2863,8 +2658,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-etansare-uw100-polietilena-rigips",
@@ -2881,8 +2675,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-etansare-uw75-polietilena-rigips",
@@ -2899,8 +2692,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-etansare-uw50-polietilena-rigips",
@@ -2917,8 +2709,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-etansare-ud28-polietilena-rigips",
@@ -2935,8 +2726,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-etansare-uw50-vata-bazaltica-rigips",
@@ -2953,8 +2743,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "banda-etansare-uw75-vata-bazaltica-rigips",
@@ -2971,8 +2760,7 @@ export const accesoriiGipsCartonProducts: Product[] = [
     },
     images: ["/images/banda2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -2995,8 +2783,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rfi-15-1200x2600mm",
@@ -3013,8 +2800,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rf-15-1200x2600mm",
@@ -3031,8 +2817,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rb-9-5-1200x2000mm",
@@ -3049,8 +2834,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rf-15-1200x2000mm",
@@ -3067,8 +2851,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rb-9-5-1200x2600mm",
@@ -3085,8 +2868,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-activ-air-12-5-1200x2000mm",
@@ -3103,8 +2885,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rb-12-5-1200x2600mm",
@@ -3121,8 +2902,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips8.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-habito-1200x2600mm",
@@ -3139,8 +2919,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips9.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rb-12-5-1200x2000mm",
@@ -3157,8 +2936,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips10.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-aquaroc-12-5x1200x2500mm",
@@ -3175,8 +2953,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips11.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rbi-12-5-1200x2600mm",
@@ -3193,8 +2970,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips12.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "duragips-a-9-5-1200x2600mm",
@@ -3211,8 +2987,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips13.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rf-12-5-1200x2600mm",
@@ -3229,8 +3004,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips14.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "duragips-a-12-5-1200x2600mm",
@@ -3247,8 +3021,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips15.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-rf-12-5-1200x2000mm",
@@ -3265,8 +3038,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips16.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "duragips-h-12-5-1200x2600mm",
@@ -3283,8 +3055,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips17.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   },
   {
     id: "rigips-fonic-12-5-1200x2600mm",
@@ -3301,8 +3072,7 @@ export const placiGipsCartonProducts: Product[] = [
     },
     images: ["/images/gips18.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0
+
   }
 ];
 
@@ -3320,8 +3090,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UA", Grosime: "1,5mm", Lungime: "4m" },
     images: ["/images/profile1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "2-profil-gips-carton-cd-60-05mm-3m",
@@ -3334,8 +3102,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "CD", Grosime: "0,5mm", Lungime: "3m" },
     images: ["/images/profile2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "3-profil-gips-carton-uw-30-04mm-3m",
@@ -3348,8 +3114,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UW", Grosime: "0,4mm", Lungime: "3m" },
     images: ["/images/profile3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "4-profil-gips-carton-cw-75-05mm-4m",
@@ -3362,8 +3126,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "CW", Grosime: "0,5mm", Lungime: "4m" },
     images: ["/images/profile4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "5-profil-gips-carton-ua-75-2mm-4m",
@@ -3376,8 +3138,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UA", Grosime: "2mm", Lungime: "4m" },
     images: ["/images/profile5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "6-profil-gips-carton-ua-100-15mm-3m",
@@ -3390,8 +3150,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UA", Grosime: "1,5mm", Lungime: "3m" },
     images: ["/images/profile6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "7-profil-gips-carton-cd-60-05mm-4m",
@@ -3404,8 +3162,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "CD", Grosime: "0,5mm", Lungime: "4m" },
     images: ["/images/profile7.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "8-profil-gips-carton-uw-30-04mm-4m",
@@ -3418,8 +3174,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UW", Grosime: "0,4mm", Lungime: "4m" },
     images: ["/images/profile8.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "9-profil-gips-carton-cw-75-06mm-3m",
@@ -3432,8 +3186,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "CW", Grosime: "0,6mm", Lungime: "3m" },
     images: ["/images/profile9.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "10-profil-gips-carton-ua-100-2mm-3m",
@@ -3446,8 +3198,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UA", Grosime: "2mm", Lungime: "3m" },
     images: ["/images/profile10.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "11-profil-gips-carton-ua-100-15mm-4m",
@@ -3460,8 +3210,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UA", Grosime: "1,5mm", Lungime: "4m" },
     images: ["/images/profile11.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "12-profil-gips-carton-cd-60-04mm-3m",
@@ -3474,8 +3222,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "CD", Grosime: "0,4mm", Lungime: "3m" },
     images: ["/images/profile12.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
     {
     id: "13-profil-gips-carton-uw-30-06mm-3m",
@@ -3488,8 +3234,6 @@ export const profileGipsCartonProducts: Product[] = [
     specifications: { Tip: "UW", Grosime: "0,6mm", Lungime: "3m" },
     images: ["/images/profile13.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 {
   id: "14-profil-gips-carton-cd-06mm-4m",
@@ -3502,8 +3246,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CD", Grosime: "0,6mm", Lungime: "4m" },
   images: ["/images/profile14.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "15-profil-gips-carton-cw-100-05mm-4m",
@@ -3516,8 +3258,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CW", Grosime: "0,5mm", Lungime: "4m" },
   images: ["/images/profile15.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "16-profil-gips-carton-cw-100-06mm-3m",
@@ -3530,8 +3270,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CW", Grosime: "0,6mm", Lungime: "3m" },
   images: ["/images/profile16.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "17-profil-gips-carton-cw-100-06mm-4m",
@@ -3544,8 +3282,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CW", Grosime: "0,6mm", Lungime: "4m" },
   images: ["/images/profile17.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "18-profil-gips-carton-cw-50-05mm-4m",
@@ -3558,8 +3294,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CW", Grosime: "0,5mm", Lungime: "4m" },
   images: ["/images/profile18.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "19-profil-gips-carton-cw-50-06mm-3m",
@@ -3572,8 +3306,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CW", Grosime: "0,6mm", Lungime: "3m" },
   images: ["/images/profile19.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "20-profil-gips-carton-cw-50-06mm-4m",
@@ -3586,8 +3318,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CW", Grosime: "0,6mm", Lungime: "4m" },
   images: ["/images/profile20.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "21-profil-gips-carton-cw-75-05mm-3m",
@@ -3600,8 +3330,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "CW", Grosime: "0,5mm", Lungime: "3m" },
   images: ["/images/profile21.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "22-profil-gips-carton-ua-50-15mm-3m",
@@ -3614,8 +3342,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UA", Grosime: "1,5mm", Lungime: "3m" },
   images: ["/images/profile22.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "23-profil-gips-carton-ua-50-15mm-4m",
@@ -3628,8 +3354,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UA", Grosime: "1,5mm", Lungime: "4m" },
   images: ["/images/profile23.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "24-profil-gips-carton-ua-50-2mm-3m",
@@ -3642,8 +3366,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UA", Grosime: "2mm", Lungime: "3m" },
   images: ["/images/profile24.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "25-profil-gips-carton-ua-50-2mm-4m",
@@ -3656,8 +3378,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UA", Grosime: "2mm", Lungime: "4m" },
   images: ["/images/profile25.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "26-profil-gips-carton-ua-75-15mm-3m",
@@ -3670,8 +3390,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UA", Grosime: "1,5mm", Lungime: "3m" },
   images: ["/images/profile26.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "27-profil-gips-carton-ua-75-2mm-3m",
@@ -3684,8 +3402,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UA", Grosime: "2mm", Lungime: "3m" },
   images: ["/images/profile27.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "28-profil-gips-carton-uw-100-05mm-3m",
@@ -3698,8 +3414,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,5mm", Lungime: "3m" },
   images: ["/images/profile28.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "29-profil-gips-carton-uw-100-05mm-4m",
@@ -3712,8 +3426,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,5mm", Lungime: "4m" },
   images: ["/images/profile28.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "30-profil-gips-carton-uw-100-06mm-4m",
@@ -3726,8 +3438,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,6mm", Lungime: "4m" },
   images: ["/images/profile30.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "31-profil-gips-carton-uw-50-05mm-3m",
@@ -3740,8 +3450,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,5mm", Lungime: "3m" },
   images: ["/images/profile31.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "32-profil-gips-carton-uw-50-06mm-4m",
@@ -3754,8 +3462,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,6mm", Lungime: "4m" },
   images: ["/images/profile32.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "33-profil-gips-carton-uw-75-05mm-3m",
@@ -3768,8 +3474,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,5mm", Lungime: "3m" },
   images: ["/images/profile33.webp"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "34-profil-gips-carton-uw-75-05mm-4m",
@@ -3782,8 +3486,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,5mm", Lungime: "4m" },
   images: ["/images/profile34.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "35-profil-gips-carton-uw-75-06mm-4m",
@@ -3796,8 +3498,6 @@ export const profileGipsCartonProducts: Product[] = [
   specifications: { Tip: "UW", Grosime: "0,6mm", Lungime: "4m" },
   images: ["/images/profile35.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 }
 ]
 
@@ -3820,8 +3520,6 @@ const panouriTegoProducts: Product[] = [
     },
     images: ["/images/tego1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "panou-tego-18mm-2500x1250",
@@ -3837,8 +3535,6 @@ const panouriTegoProducts: Product[] = [
     },
     images: ["/images/tego1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "panou-tego-20mm-2440x1220",
@@ -3854,8 +3550,6 @@ const panouriTegoProducts: Product[] = [
     },
     images: ["/images/tego1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   }
 ]
 
@@ -3878,8 +3572,6 @@ const tencuieliDecorativeProducts: Product[] = [
     },
     images: ["/images/ten1.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "tencuiala-decorativa-ceresit-ct75",
@@ -3896,8 +3588,6 @@ const tencuieliDecorativeProducts: Product[] = [
     },
     images: ["/images/ten2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "tencuiala-decorativa-ceresit-ct175",
@@ -3914,8 +3604,6 @@ const tencuieliDecorativeProducts: Product[] = [
     },
     images: ["/images/ten3.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "tencuiala-decorativa-ceresit-ct74",
@@ -3932,8 +3620,6 @@ const tencuieliDecorativeProducts: Product[] = [
     },
     images: ["/images/ten4.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "tencuiala-decorativa-ceresit-ct64",
@@ -3950,8 +3636,6 @@ const tencuieliDecorativeProducts: Product[] = [
     },
     images: ["/images/ten5.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "tencuiala-decorativa-ceresit-ct60",
@@ -3968,8 +3652,6 @@ const tencuieliDecorativeProducts: Product[] = [
     },
     images: ["/images/ten6.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   }
 ]
 
@@ -3991,8 +3673,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika1.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-level-gypsum",
@@ -4008,8 +3688,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika2.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sikaceram-105",
@@ -4025,8 +3703,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika3.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-tilebond-flexible",
@@ -4042,8 +3718,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika4.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-tilebond-natural-stone",
@@ -4059,8 +3733,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika5.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-level-fine",
@@ -4076,8 +3748,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika6.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sikaceram-205-gri",
@@ -4093,8 +3763,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika7.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sikaceram-255-starflex-gri",
@@ -4110,8 +3778,6 @@ const materialeFiniareProducts: Product[] = [
     },
     images: ["/images/sika8.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   }
 ]
 
@@ -4134,8 +3800,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig1.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-boom-582-750ml",
@@ -4152,8 +3816,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig2.webp"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sikaflex-11-fc-plus-300ml",
@@ -4170,8 +3832,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig3.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sikaflex-111-stick-seal",
@@ -4187,8 +3847,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig4.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-seal-tape-s-10m",
@@ -4205,8 +3863,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig5.png"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-igasol-101-12l",
@@ -4223,8 +3879,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig6.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-top-seal-107-mortar",
@@ -4240,8 +3894,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig7.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-igolflex-n-25kg",
@@ -4258,8 +3910,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig8.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "sika-seal-tape-s-50m",
@@ -4276,8 +3926,6 @@ const sigilariSiLipiriProducts: Product[] = [
     },
     images: ["/images/sig9.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   }
 ]
 
@@ -4298,8 +3946,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps50.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "eps60-20cm",
@@ -4316,8 +3962,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps50.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   {
@@ -4335,8 +3979,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps50.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
  
   {
@@ -4354,8 +3996,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps80.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   {
@@ -4373,8 +4013,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps100.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   {
@@ -4392,8 +4030,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps100.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   {
@@ -4411,8 +4047,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps100.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   {
@@ -4430,8 +4064,6 @@ const polistirenExpandatProducts: Product[] = [
     },
     images: ["/images/eps100.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 ]
 
@@ -4450,8 +4082,6 @@ const polistirenExtrudatProducts: Product[] = [
     },
     images: ["/images/extrudat.jpeg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   
   {
@@ -4468,8 +4098,6 @@ const polistirenExtrudatProducts: Product[] = [
     },
     images: ["/images/extrudat.jpeg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   {
@@ -4486,8 +4114,6 @@ const polistirenExtrudatProducts: Product[] = [
     },
     images: ["/images/extrudat.jpeg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   {
@@ -4504,8 +4130,6 @@ const polistirenExtrudatProducts: Product[] = [
     },
     images: ["/images/extrudat.jpeg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 ]
 
@@ -4525,8 +4149,6 @@ const polistirenGrafitatProducts: Product[] = [
     },
     images: ["/images/grafitat.jpg"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 ]
 
@@ -4546,8 +4168,6 @@ const polistirenSpecialProducts: Product[] = [
     },
     images: ["/images/top1.png"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
   {
     id: "pir-al-al-1200x2400-3cm",
@@ -4564,8 +4184,6 @@ const polistirenSpecialProducts: Product[] = [
     },
     images: ["/images/top2.png"],
     inStock: true,
-    rating: 0,
-    reviews: 0,
   },
 
   // ——— ACCESORII TERMOSISTEM ———
@@ -4580,8 +4198,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: {},
   images: ["/images/PVC.jpeg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "profil-pvc-cu-picurator-2-5m",
@@ -4594,8 +4210,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { lungime: "2.5m", material: "PVC" },
   images: ["/images/pvc2.jpeg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "dibluri-polistiren-10x90mm",
@@ -4608,8 +4222,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { diametru: "10mm", lungime: "90mm", material: "polistiren" },
   images: ["/images/dibluri.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "dibluri-10x120mm",
@@ -4622,8 +4234,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { diametru: "10mm", lungime: "120mm" },
   images: ["/images/dibluri.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "dibluri-10x140mm",
@@ -4636,8 +4246,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { diametru: "10mm", lungime: "140mm" },
   images: ["/images/dibluri.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "dibluri-10x160mm",
@@ -4650,8 +4258,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { diametru: "10mm", lungime: "160mm" },
   images: ["/images/dibluri.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "dibluri-10x180mm",
@@ -4664,8 +4270,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { diametru: "10mm", lungime: "180mm" },
   images: ["/images/dibluri.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "dibluri-10x200mm",
@@ -4678,8 +4282,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { diametru: "10mm", lungime: "200mm" },
   images: ["/images/dibluri.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "dibluri-10x260mm",
@@ -4692,8 +4294,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { diametru: "10mm", lungime: "260mm" },
   images: ["/images/dibluri.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "profil-soclu-aluminiu-termosistem-100x2500mm",
@@ -4706,8 +4306,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { material: "aluminiu", dimensiuni: "100×2500mm" },
   images: ["/images/soclu.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "plasa-fibra-premium-145gr-50mp",
@@ -4720,8 +4318,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { greutate: "145gr/m²", suprafata: "50mp" },
   images: ["/images/plasa1.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 {
   id: "plasa-fibra-premium-160gr-50mp",
@@ -4734,8 +4330,6 @@ const polistirenSpecialProducts: Product[] = [
   specifications: { greutate: "160gr/m²", suprafata: "50mp" },
   images: ["/images/plasa2.jpg"],
   inStock: true,
-  rating: 0,
-  reviews: 0,
 },
 ]
 

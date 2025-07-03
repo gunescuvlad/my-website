@@ -47,8 +47,6 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
           const priceA = typeof a.price === "number" ? a.price : 0
           const priceB = typeof b.price === "number" ? b.price : 0
           return priceA - priceB
-        case "rating":
-          return b.rating - a.rating
         default:
           return a.name.localeCompare(b.name)
       }
@@ -165,7 +163,6 @@ export function CategoryPage({ category, products }: CategoryPageProps) {
                 <SelectContent>
                   <SelectItem value="name">Nume A-Z</SelectItem>
                   <SelectItem value="price">Preț crescător</SelectItem>
-                  <SelectItem value="rating">Rating</SelectItem>
                 </SelectContent>
               </Select>
               {/* View toggle */}

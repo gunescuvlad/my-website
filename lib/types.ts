@@ -24,8 +24,8 @@ export interface Product {
   subcategoryId: string
   images: string[]
   inStock: boolean
-  rating: number
-  reviews: number
+  //rating: number
+   // reviews: number
   badge?: string
   specifications: Record<string, string>
 }

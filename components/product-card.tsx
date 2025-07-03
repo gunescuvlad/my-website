@@ -67,10 +67,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </h3>
         </Link>
 
-        <div className="flex items-center mb-2">
-          <div className="flex items-center space-x-1">{renderStars(product.rating)}</div>
-          <span className="text-sm text-gray-500 ml-2">({product.reviews} recenzii)</span>
-        </div>
+       
 
         {/* Preț la cerere + WhatsApp */}
         <div className="mb-4">

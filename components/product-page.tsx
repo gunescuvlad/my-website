@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Star, Plus, Minus, ShoppingCart, MessageCircle, ArrowLeft } from "lucide-react"
+import { Plus, Minus, ShoppingCart, MessageCircle, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -33,17 +33,6 @@ export function ProductPage({ product }: ProductPageProps) {
       payload: { product, quantity },
     })
     setQuantity(1)
-  }
-
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <Star
-        key={i}
-        className={`h-5 w-5 ${
-          i < Math.floor(rating) ? "text-yellow-400 fill-current" : "text-gray-300"
-        }`}
-      />
-    ))
   }
 
   const handleWhatsApp = () => {
@@ -127,14 +116,6 @@ export function ProductPage({ product }: ProductPageProps) {
             <p className="text-gray-600 mb-4">{subcategory?.name}</p>
           </div>
 
-          {/* Rating */}
-          <div className="flex items-center mb-6">
-            <div className="flex items-center space-x-1 mr-4">{renderStars(product.rating)}</div>
-            <span className="text-sm text-gray-500">
-              {product.rating} din 5 ({product.reviews} recenzii)
-            </span>
-          </div>
-
           {/* Price */}
           <div className="mb-6">
             {typeof product.price === "number" ? (
@@ -212,19 +193,16 @@ export function ProductPage({ product }: ProductPageProps) {
 
       {/* Product Details Tabs */}
       <Tabs defaultValue="specifications" className="mb-12">
-        <TabsList className="grid w-full grid-cols-2">
+        <TabsList className="grid w-full grid-cols-1">
           <TabsTrigger value="specifications">Specificații Tehnice</TabsTrigger>
-          <TabsTrigger value="reviews">Recenzii ({product.reviews})</TabsTrigger>
         </TabsList>
 
-        {/* SPECIFICATIONS */}
         <TabsContent value="specifications">
           <Card>
             <CardHeader>
               <CardTitle>Specificații Tehnice</CardTitle>
             </CardHeader>
             <CardContent>
-              {/* Afișăm întâi imaginea-tabel, dacă e cazul */}
               {showSpecTable && (
                 <div className="mb-6 text-center">
                   <Image
@@ -236,8 +214,6 @@ export function ProductPage({ product }: ProductPageProps) {
                   />
                 </div>
               )}
-
-              {/* Apoi lista de specificații textuale */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <div key={key} className="flex justify-between py-2 border-b">
@@ -245,23 +221,6 @@ export function ProductPage({ product }: ProductPageProps) {
                     <span className="text-gray-900">{value}</span>
                   </div>
                 ))}
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        {/* REVIEWS */}
-        <TabsContent value="reviews">
-          <Card>
-            <CardHeader>
-              <CardTitle>Recenzii Clienți</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-center py-8 text-gray-500">
-                <p>Recenziile vor fi disponibile în curând.</p>
-                <p className="text-sm mt-2">
-                  Rating actual: {product.rating}/5 bazat pe {product.reviews} recenzii
-                </p>
               </div>
             </CardContent>
           </Card>

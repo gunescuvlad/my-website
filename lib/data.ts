@@ -112,8 +112,6 @@ export const products: Product[] = [
     subcategoryId: "fier-beton",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.5,
-    reviews: 23,
     badge: "Bestseller",
     specifications: {
       Diametru: "6mm",
@@ -134,8 +132,6 @@ export const products: Product[] = [
     subcategoryId: "fier-beton",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.6,
-    reviews: 31,
     specifications: {
       Diametru: "8mm",
       Tip: "OB37",
@@ -155,8 +151,6 @@ export const products: Product[] = [
     subcategoryId: "fier-beton",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.7,
-    reviews: 45,
     specifications: {
       Diametru: "8mm",
       Tip: "BST500C",
@@ -176,8 +170,6 @@ export const products: Product[] = [
     subcategoryId: "fier-beton",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.8,
-    reviews: 52,
     specifications: {
       Diametru: "10mm",
       Tip: "BST500C",
@@ -197,8 +189,6 @@ export const products: Product[] = [
     subcategoryId: "fier-beton",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.9,
-    reviews: 67,
     badge: "Bestseller",
     specifications: {
       Diametru: "12mm",
@@ -221,8 +211,6 @@ export const products: Product[] = [
     subcategoryId: "fier-beton-fasonat",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.4,
-    reviews: 18,
     specifications: {
       Diametru: "8mm",
       Tip: "BST500C",
@@ -242,8 +230,6 @@ export const products: Product[] = [
     subcategoryId: "fier-beton-fasonat",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.5,
-    reviews: 22,
     specifications: {
       Diametru: "10mm",
       Tip: "BST500C",
@@ -265,8 +251,6 @@ export const products: Product[] = [
     subcategoryId: "bca",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.7,
-    reviews: 89,
     badge: "Bestseller",
     specifications: {
       Dimensiuni: "599x50x199mm",
@@ -287,8 +271,6 @@ export const products: Product[] = [
     subcategoryId: "bca",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.8,
-    reviews: 156,
     badge: "Bestseller",
     specifications: {
       Dimensiuni: "599x100x199mm",
@@ -311,8 +293,6 @@ export const products: Product[] = [
     subcategoryId: "caramida",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.6,
-    reviews: 73,
     specifications: {
       Dimensiuni: "250x300x238mm",
       Marca: "Porotherm",
@@ -334,8 +314,6 @@ export const products: Product[] = [
     subcategoryId: "amorse",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.7,
-    reviews: 124,
     badge: "Bestseller",
     specifications: {
       Volum: "10L",
@@ -358,8 +336,6 @@ export const products: Product[] = [
     subcategoryId: "ciment",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.8,
-    reviews: 267,
     badge: "Bestseller",
     specifications: {
       Greutate: "40kg",
@@ -382,8 +358,6 @@ export const products: Product[] = [
     subcategoryId: "gleturi",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.6,
-    reviews: 98,
     specifications: {
       Greutate: "20kg",
       Marca: "Ceresit",
@@ -405,8 +379,6 @@ export const products: Product[] = [
     subcategoryId: "adezivi-gresie-faianta",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.9,
-    reviews: 189,
     badge: "Bestseller",
     specifications: {
       Greutate: "25kg",
@@ -429,8 +401,6 @@ export const products: Product[] = [
     subcategoryId: "placi-gips-carton",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.7,
-    reviews: 234,
     badge: "Bestseller",
     specifications: {
       Dimensiuni: "1200x2000mm",
@@ -453,8 +423,6 @@ export const products: Product[] = [
     subcategoryId: "panouri-tego",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.5,
-    reviews: 45,
     specifications: {
       Dimensiuni: "1250x2500mm",
       Grosime: "21mm",
@@ -476,8 +444,6 @@ export const products: Product[] = [
     subcategoryId: "tencuieli-decorative",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.8,
-    reviews: 67,
     badge: "Premium",
     specifications: {
       Volum: "25kg",
@@ -500,8 +466,6 @@ export const products: Product[] = [
     subcategoryId: "materiale-finisare",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.6,
-    reviews: 34,
     specifications: {
       Greutate: "25kg",
       Marca: "Sika",
@@ -523,8 +487,6 @@ export const products: Product[] = [
     subcategoryId: "sigilari-lipiri",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.9,
-    reviews: 156,
     badge: "Premium",
     specifications: {
       Volum: "300ml",
@@ -547,8 +509,6 @@ export const products: Product[] = [
     subcategoryId: "bca",
     images: ["/placeholder.svg?height=400&width=400"],
     inStock: true,
-    rating: 4.5,
-    reviews: 67,
     specifications: {
       Dimensiuni: "650x125x200mm",
       Marca: "Elpreco",
