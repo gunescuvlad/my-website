@@ -10,17 +10,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
- 
-  <Image
-    src="/images/logo-transparent.png"
-    alt="Logo IzoPresto"
-    width={100}
-    height={25}
-    priority={false}
-  />
-
-
-  <p className="text-gray-300 mb-4">
+            <Image
+              src="/images/logo-transparent.png"
+              alt="Logo IzoPresto"
+              width={100}
+              height={25}
+              priority={false}
+            />
+            <p className="text-gray-300 mb-4">
               Furnizor de încredere pentru materiale de construcții de peste 20 de ani. Calitate garantată și servicii
               profesionale.
             </p>
@@ -116,6 +113,34 @@ export function Footer() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* —— ANPC SAL & SOL (ODR) pictograme —— */}
+        <div className="flex justify-center gap-4 py-8">
+          <a
+            href="https://anpc.ro/ce-este-sal/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://anpc.ro/wp-content/uploads/2022/07/SAL-PICTOGRAMA.png"
+              alt="Soluționarea alternativă a litigiilor – ANPC"
+              width={200}
+              height={60}
+            />
+          </a>
+          <a
+            href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://anpc.ro/wp-content/uploads/2022/08/pictogramaSOL.png"
+              alt="Soluționarea online a litigiilor (OLRC)"
+              width={200}
+              height={60}
+            />
+          </a>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
